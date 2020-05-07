@@ -1,0 +1,346 @@
+<HTML>
+<HEAD>
+<TITLE>L&#243;gica Modal Computational</TITLE>
+</HEAD>
+
+
+<BODY 	TEXT="#ffffff"
+	LINK="#ffffff"
+	VLINK="#000000"
+	BGCOLOR="#9b9b9b"
+	alink   = "#202390"
+>
+
+<FONT FACE="avantgarde, sans-serif">
+<FONT SIZE=4>
+
+<TABLE 	WIDTH=600
+  	BORDER=0
+  	CELLPADDING=0
+  	CELLSPACING=0>
+
+  <TR>
+    <TD BGCOLOR="#cccccc">
+    <P ALIGN=CENTER>
+    <FONT SIZE=6>
+    <B>L&#243;gica Modal Computacional<BR>Informaci&#243;n General</B>
+    </FONT>
+    </P>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD HEIGHT = 30></TD>
+  </TR>
+  
+  <TR>
+    <TD BGCOLOR="#cccccc">
+    <P ALIGN=LEFT>
+    <FONT SIZE=6>
+    <B><A NAME="introduccion">Introducci&#243;n</A></B>
+    </FONT>
+    </P>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD HEIGHT = 10></TD>
+  </TR>
+
+  <TR>
+    <td>
+
+	<H3>Las L&#243;gicas Modales desde una Perspectiva Actual</H3>
+	
+	<P>
+	En su perspective m&#225;s moderna, las l&#243;gicas modales
+	son vistas
+	como herramientas para indentificar fragmentos
+	interesantes de l&#243;gicas de primer y alto orden, para
+	una determinada tarea de modelaje o inferencia.
+	</P>
+
+	<P>
+	``Interesante'' usualmente significa: de baja complejidad,
+	buenas propiedades metal&#243;gicas (completitud,
+	interpolaci&#243;n, etc.), poder expresivo adecuado, simple
+	dise&#241;o de algoritmos de decisi&#243;n y de herramientas
+	autom&#225;ticas de inferencia,
+	simplicidad de uso, etc.
+	</P>
+
+	<P>
+	Por el otro lado, las posibles ``tareas de modelaje o
+	inferencia'' pueden ser extremandamente variadas,
+	desde aplicaciones cl&#225;sicas en filosof&#237;a y
+	epistemolog&#237;a, usos en lingu&#237;stica
+	(el trabajo fundacional de Prior en Tense Logic y el
+	an&#225;lisis de tiempos verbales, o el trabajo m&#225;s
+	reciente en Multimodal Categorial Logics ), a los usos
+	m&#225;s proximos a la Ciencia de la Computaci&#243;n como
+	representaci&#243;n del conocimiento, model
+	checking y verificaci&#243;n formal de software y hardware.
+	</P>
+
+	<P>
+	Aquellos que quieran saber un poco m&#225;s sobre esta
+	perspectiva ``ingenieril'' de las l&#243;gicas modales, pueden
+	darle una mirada a los slides de la charla
+	``<A href="logicas.ps.gz">L&#243;gicas Computacionales a
+	Medida</A>.''
+	</P>
+
+	<H3>El Curso</H3>
+	
+	<P>
+	El principal &#233;nfasis te&#243;rico del curso ser&#225; en los
+	aspectos computacionales de lenguages modales (incluyendo
+	lenguajes modales no standard, como l&#243;gicas h&#237;bridas
+	y l&#243;gicas para descripci&#243;n).  En particular,
+	discutiremos diferentes m&#233;todos de inferencia y
+	decisi&#243;n (directos e indirectos), su complejidad y
+	posibles heur&#237;sticas y optimizaciones para problemas de
+	satisfiabilidad.
+	</P>
+
+	<P>
+	En las clases pr&#225;cticas presentaremos una selecci&#243;n
+	de herramientas para deducci&#243;n autom&#225;tica (RACER,
+	Bliksem, HyLoRes), complementando las nociones te&#243;ricas
+	con experiencia de laboratorio.
+	</P>
+
+	<P>
+	El curso no requiere conocimientos previos de l&#243;gica
+	modal, pero s&#237; asume conocimientos b&#225;sicos sobre
+	l&#243;gica proposicional y de predicados.
+	</P>	
+	
+	<P>
+	La siguiente es una lista tentativa de temas, en el orden en
+	que ser&#237;an presentados en el curso.  Si alguien est&#225;
+	interesado en alg&#250;n otro tema relacionado con
+	l&#243;gicas modales computacionales, se puede poner en
+	contacto conmigo (<A
+	href="mailto:carlos@cience.uva.nl">carlos@science.uva.nl</A>) e
+	intentar&#233; incluirlo en el curso.
+	</P>
+	
+	<P>
+	<UL>
+	  <LI> <B>Semana 1:</B> Ventajas y desventajas de las l&#243;gicas
+	      cl&#225;sicas. Introducci&#243;n a la l&#243;gica modal.
+	      L&#243;gicas modales como fragmentos de l&#243;gicas
+	      cl&#225;sicas.  Poder expresivo. Nociones de
+	      b&#225;sicas de bisimulaci&#243;n. M&#233;todos de
+	      decisi&#243;n y su complejidad.  Un men&#250; de
+	      l&#243;gicas modales.  Ejemplos de applicaci&#243;n.
+	      
+	  <LI> <B>Semana 2:</B> El m&#233;todo de tableux. Tableux
+	      cl&#225;sicos. Correctitud, completitud y
+	      terminaci&#243;n. L&#243;gicas para la
+	      descripci&#243;n. Bases de conocimiento.  Nociones de
+	      consecuencia global y local.  Inferencia a partir de
+	      bases de conocimiento (T- and A-Box reasoning). Prefixed
+	      tableaux. Complejidad PSPACE de K.  Logicas en EXPTIME.
+	      Heuristicas y optimizaciones: catching, backjumping,
+	      etc. El demostrador autom&#225;tico RACER.
+
+	  <LI> <B>Semana 3:</B> La traducci&#243;n standard.
+	      Caracterizaci&#243;n del fragmento modal de l&#243;gica
+	      de primer orden. Otros fragmentos modales de la l&#243;gica
+	      de primer (y segundo) orden.  Satisfiabilidad modal como
+	      satisfiabilidad de primer orden.  Ventajas y desventajas
+	      del mapeo dentro de primer orden. El m&#233;todo de
+	      resoluci&#243;n. Resoluci&#243;n para l&#243;gica
+	      proposicional. Unificaci&#243;n.  Resoluci&#243;n para
+	      l&#243;gica de primer orden.  Otras traducciones
+	      (funcional, layered, etc).
+	      Comparaci&#243;n. El demostrador autom&#225;tico
+	      Bliksem.
+
+	  <LI> <B>Semana 4:</B> L&#243;gicas h&#237;bridas.
+	      Referencia expl&#237;cita a elementos del modelo.  Poder
+	      expresivo y complejidad.  Ejemplos de modelado usando
+	      l&#243;gicas h&#237;bridas.  L&#243;gicas para la
+	      descripci&#243;n desde el punto de vista de las
+	      l&#243;gicas h&#237;bridas.  Internalizaci&#243;n de
+	      tableaux.  Resoluci&#243;n directa cl&#225;sica de
+	      l&#243;gicas modales.  Resoluci&#243;n en l&#243;gicas
+	      h&#237;bridas. 
+	      El demostrador autom&#225;tico HyLoRes (with all the
+	      nitty-gritty details :)).
+	</UL>
+	</P>
+
+	<P>
+	<B>Bibliograf&#237;a B&#225;sica</B>: Toda la bibliografia
+	relevante va a ser puesta a disposici&#243;n en estas p&#225;ginas.
+	<UL>
+	  <LI>Areces and de Rijke,
+	      Computational Modal Logics
+	      (Libro en preparaci&#243;n)</LI>
+
+	  <LI>Blackburn, de Rijke and Venema,
+	      Modal Logic,
+	      Cap&#237;tulos <A href="chapter1.ps.gz">1</A>,
+	      <A href="chapter2.ps.gz">2</A> y
+	      <A href="chapter6.ps.gz">6</A>.
+	      <A href="guide.ps.gz">Gu&#237;a a la Literatura</A>.
+	      <A href="biblio.ps.gz">La bibliograf&#237;a</A></LI>
+	  <LI>Areces,
+	      <A href="logiceng.ps.gz">Logic Engineering</A>,
+	      Cap&#237;tulos 1 y 2.
+	      <A href="logiceng-bib.ps.gz">La bibliograf&#237;a</A></LI>
+
+	  <LI>Gor&#233;,
+	      <A href="gore.ps.gz">Tableau Methods for Modal and
+	      Temporal Logics</A> (<A href="gore-errata.ps.gz">correcciones</A>)
+	  </LI>
+	  <LI>Tobies,
+	      <A href="tobies.ps.gz">Complexity Results and Practical Algorithms
+	      for Logics in Knowledge Representation</A>,
+	      Cap&#237;tulos 1, 2 y 3. <A href="tobies-bib.ps.gz">La bibliograf&#237;a</A></LI>
+	  <LI>Horrocks and Patel-Schneider,
+	      <A href="horrocks.ps.gz">Optimising Description
+	      Logic Subsumption</A></LI>
+
+	  <LI> de Nivelle, Schmidt, and Hustadt,
+	      <A href="renate.ps.gz">Resolution-Based
+	      Methods for Modal Logics</A></LI>
+	  <LI> Areces, Monz, de Nivelle and de Rijke,
+	      <A href="gf.ps.gz">The Guarded Fragment: Ins and Outs</A></LI>
+	  <LI> Areces, Gennari, Heguiabehere and de Rijke,
+	      <A href="layered.ps.gz">Tree-Based Heuristics in Modal
+	      Theorem Proving</A></LI>
+	      
+	  <LI> Blackburn,
+	      <A href="manifesto.ps.gz">Representation, Reasoning, and
+	      Relational Structures: a Hybrid Logic Manifesto</A></LI>
+	  <LI> Blackburn,
+	      <A href="internalizing.ps.gz">Internalizing
+	      Labelled Deduction</A></LI>
+	  <LI> Areces, de Nivelle and de Rijke,
+	      <A href="prefixed.ps.gz">Resolution in Modal,
+	      Description and Hybrid Logic</A></LI>
+	</UL>
+	</P>
+    </td>
+  </tr>
+
+  <TR>
+    <TD HEIGHT = 10></TD>
+  </TR>
+
+  <TR>
+    <TD BGCOLOR="#cccccc">
+    <P ALIGN=LEFT>
+    <FONT SIZE=6>
+    <B><A NAME="horario">Horario</A></B>
+    </FONT>
+    </P>
+    </TD>
+  </TR>
+  
+  <TR>
+    <TD HEIGHT = 5></TD>
+  </TR>
+
+<TR>
+    <td>
+	<P>
+	El curso se dictar&#225; durante las cuatro semanas de
+	Setiembre, con dos clases
+	te&#243;ricas por semana de tres horas cada una, m&#225;s
+	una clase pr&#225;ctica (ejercicios/laboratorio) de dos horas,
+	para sumar un gran
+	total de 8 horas semanales de l&#243;gica modal.
+	</P>
+
+	<P>
+	Los horarios
+	definitivos y el aula donde se dictar&#225;n las clases ser&#225;n
+	anunciados pronto.
+	</P>
+
+	<P>
+	Como ven, el curso va a ser realmente intensivo.  A cambio de
+	esta dosis masiva de l&#243;gica modal, los alumnos que pasen
+	la evaluaci&#243;n final (detalles mas abajo), recibir&#225;n
+	dos puntos de materias optativas.
+	</P>
+
+	<P>
+	Adem&#225;s, durante el curso se presentar&#225; un buen
+	n&#250;mero de temas aptos para tesis de licenciatura.
+	Aquellos que est&#233;n interesados podr&#225;n discutirlos
+	conmigo y coordinar colaboraciones con gente en Amsterdam.
+	</P>
+    </td>
+  </tr>
+  
+
+  
+  <TR>
+    <TD HEIGHT = 10></TD>
+  </TR>
+
+  <TR>
+    <TD BGCOLOR="#cccccc">
+    <P ALIGN=LEFT>
+    <FONT SIZE=6>
+    <B><A NAME="evaluacion">Evaluaci&#243;n</A></B>
+    </FONT>
+    </P>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD HEIGHT = 5></TD>
+  </TR>
+
+  <TR>
+    <td>
+	<P>
+	Durante las clases te&#243;ricas se indicar&#225;n
+	ejercicios (te&#243;ricos y pr&#225;cticos), algunos de los
+	cuales ser&#225;n seleccionados
+	como parte de la evaluaci&#243;n final.  
+	</P>
+
+	<P>
+	Un archivo conteniendo el enunciado definitivo de los
+	ejercicios elegidos para la evaluacion final con su valor en
+	puntos ser&#225; accessible
+	<A href="evaluacion.ps.gz">desde este link</A>.
+	</P>
+
+	<P>
+	Los ejercicios pueden ser discutidos conmigo durante el curso.
+	Durante las clases pr&#225;cticas resolveremos ejercicios
+	similares a los de la evaluaci&#243;n.
+	</P>
+
+	<P>
+	Luego de terminado el curso, aquellos que quieran aprobar y
+	obtener una nota final, deber&#225;n enviarme dentro del
+	siguiente mes respuestas a los
+	ejercicios para su correcci&#243;n.  La elecci&#243;n de que
+	ejercicios
+	resolver es libre.  Para la aprobaci&#243;n del curso, se deben
+	obtener al menos 40 puntos en ejercicios te&#243;ricos y 40
+	puntos en ejercicios pr&#225;cticos.
+	</P>
+    </td>
+  </tr>
+
+  <TR>
+    <TD HEIGHT = 40></TD>
+  </TR>
+	
+</TABLE>
+
+</FONT>
+</FONT>
+</BODY>
+</HTML>

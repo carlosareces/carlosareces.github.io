@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<TITLE>L&#243;gica Modal Computational</TITLE>
+<META Name="keywords" 
+     CONTENT="Areces,
+              modal logic, logic, model theory, interpolation,
+              expressive power, expressivity, description logics,
+              interpretability logics, bisimulations,
+              Amsterdam, UvA, Buenos Aires">
+
+
+</head>
+
+
+<FRAMESET COLS="145,*"
+    FRAMEBORDER=0
+    BORDER=0>
+   <FRAME SRC="index_left.html">
+   <FRAME SRC="index_right.html" name="right">
+</FRAMESET>
+
+</HTML>
+
+
+

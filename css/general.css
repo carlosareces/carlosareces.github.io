@@ -1,0 +1,280 @@
+@import url("layout.css"); 
+/* Loads layout stylesheet separately to prevent IE5 from screwing up */
+
+
+body, p {
+  font: 12px/170% sans-serif;
+  color: #6e6e6f;
+}
+
+body.index {
+  background: url(../images/bg-pattern.jpg);
+  text-align: left;
+  margin: 5px;
+}
+
+img { 
+  border: 0; 
+}
+
+pre {
+  font: normal 8px/100% courier ;
+  color: #000000;
+}
+
+h1 {
+  font: normal 20px/120% sans-serif;
+  text-align: left;
+  margin-bottom: 1px;
+  color: #133976;
+}
+
+h2 {
+  font: normal 14px/14px sans-serif;
+  margin: 0 0 1px 0;
+  text-align: left;
+  color: #133976;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+h3 {
+  font: normal 12px/12px sans-serif;
+  margin: 0 0 1px 0;
+  text-align: left;
+  text-transform: uppercase;
+/*   color: #133976; */
+  color: #ffffff;
+}
+
+hr {
+  background-color: #6e6e6f;
+  color:#6e6e6f;
+  height: 1px;
+  border: 0;
+}
+
+p.citation {
+  text-indent: -1em;
+  padding:0px 0px 4px 3em;
+}
+
+p.abstract {
+  font-style: italic;
+  padding: 0px 2em 2px 2em;
+}
+
+
+a:link,
+a:visited { 
+  color: #007dab; 
+  text-decoration:none; 
+}
+
+a:active,
+a:hover	{ 
+  color: #004e6b;
+  text-decoration:none; 
+}
+
+a.side:link,
+a.side:visited{
+  font: normal 12px/120% sans-serif;
+  color:#9ed7ec;
+}	
+
+a.side:active,
+a.side:hover	{ 
+  font: normal 12px/120% sans-serif;
+  color: #8fc3d6; 
+}
+
+.blog	{
+  width: 92%;				
+  text-align: left;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #FFF;
+}	
+
+.blogbody {
+  border-top: 1px solid #AAA;
+  padding-bottom: 10px;
+  padding-left: 3px;
+}
+
+
+.otherbody {
+  padding-bottom: 10px;
+  padding-left: 3px;
+  margin-top: 5px;
+}
+
+.deco {
+  float: left;
+  height: 16px;
+}
+	
+.totop 	{
+  float: left;
+  border: 1px solid #DDCDCD;
+  margin-left: 2px;
+}
+			
+.divider { 
+  font-family:verdana, arial, sans-serif; 
+  font-size: x-small; 
+}
+
+
+.sidetitle {
+  font: normal 15px/15px sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #777;
+}		
+
+.quote {
+  margin: 10px auto;
+  width: 97%; 
+  background-color: #FFF3BF; 
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+	
+#copyright {
+  margin-top: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* All the content boxes belong to the content class. */
+.content2{
+  /* Position is declared "relative" to gain control of stacking order
+     (z-index). */
+  position:relative;
+  width:auto;
+  min-width: 310px;
+  margin:10px 10px 10px 10px;
+  /* This allows the content to overlap the right menu in narrow windows in
+     good browsers. */
+  z-index:3;
+}
+
+
+/*
+.block	{ 
+  display: block; 
+}
+*/
+
+/*
+.float	{ 
+  float: left; 
+  margin-right: 10px; 
+  clear: right; 
+}
+*/
+
+/*
+acronym { 
+  cursor: help; 
+}
+*/
+
+/*
+.sublinks a,
+.sublinks a:link,
+.sublinks a:visited,
+.sublinks a:active,
+.sublinks a:hover { 
+  font-weight: 
+  bold; 
+}
+*/
+
+/*
+.leftlink {
+  float: left;
+  width: 150px;
+}
+*/
+
+/*
+.leftdate {
+  float: right;
+}
+*/
+
+/*		
+.comments 	{
+  width: 92%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #FFF;
+}	
+*/
+
+/*
+.comments-head	{
+  margin: 10px auto;
+  border-bottom: 1px solid #999;
+}		
+*/
+
+/*
+.comments-body {
+  padding: 3px 5px;
+  margin: 0 auto;
+}
+*/
+
+/*
+.comments-body p {
+  font: normal 12px/150% sans-serif;
+  color: #666;
+  margin: 2px;
+}
+*/
+
+/*
+.blogbodycom {
+  border-top: 1px solid #AAA;
+  padding-left: 3px;
+  margin-top: 5px;
+}
+*/	
+	
+/*	
+.inputBtn {
+  font-family: sans-serif;
+  color: #666;
+  border: 1px solid #999;
+  background-color: #D8E4E5;
+}
+*/
+			
+/*		
+#TextDisplay {
+  margin: 10px auto;
+  width: 95%; 
+  background-color: #eee; 
+  border: 1px solid #999;
+  padding: 5px;
+}
+*/
+			
+/*	
+.postpic {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+*/
+
+
+
+
+

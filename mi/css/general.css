@@ -1,0 +1,254 @@
+@import url("layout.css"); 
+/* Loads layout stylesheet separately to prevent IE5 from screwing up */
+
+
+body, p {
+  font: 12px/170% sans-serif;
+  color: #666;
+}
+
+body.index {
+  background: url(../images/bg-pattern.gif);
+  text-align: left;
+  margin: 5px;
+}
+				
+img { 
+  border: 0; 
+}
+
+h1 {
+  font: normal 20px/120% sans-serif;
+  text-align: left;
+  margin-bottom: 1px;
+  color: #a15f0a;
+}
+
+h2 {
+  font: normal 14px/14px sans-serif;
+  margin: 0 0 1px 0;
+  text-align: left;
+  color: #a1850a;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+h3 {
+  font: normal 12px/12px sans-serif;
+  margin: 0 0 1px 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: #999;
+}
+
+hr {
+  color: #999;
+  background-color: #999;
+  height: 1px;
+  border: 0;
+}
+
+A,
+A:link,
+A:visited { 
+  color: #a15f0a; 
+  text-decoration:none; 
+}
+
+A:active,
+A:hover	{ 
+  color: #8c2c0c; 
+  text-decoration:none; 
+}
+
+.blog	{
+  width: 92%;				
+  text-align: left;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #FFF;
+}	
+
+.blogbody {
+  border-top: 1px solid #AAA;
+  padding-bottom: 10px;
+  padding-left: 3px;
+}
+
+
+.otherbody {
+  padding-bottom: 10px;
+  padding-left: 3px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.deco {
+  float: left;
+  height: 16px;
+}
+	
+.totop 	{
+  float: left;
+  border: 1px solid #DDCDCD;
+  margin-left: 2px;
+}
+			
+.divider { 
+  font-family:verdana, arial, sans-serif; 
+  font-size: x-small; 
+}
+
+.side 	{
+  font: normal 12px/120% sans-serif;
+  color: #a15f0a;
+}	
+
+.sidetitle {
+  font: normal 15px/15px sans-serif;
+  color: #454F52;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #777;
+}		
+
+a.stlink { 
+  color: #a15f0a;
+}
+
+.quote {
+  margin: 10px auto;
+  width: 97%; 
+  background-color: #FFF3BF; 
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+	
+#copyright {
+  margin-top: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.myul { 
+  list-style-type: disc;
+  list-style-image: url(../images/clover.gif);
+  margin-left:-1em;
+  padding-left:0em;
+}
+
+/*
+.block	{ 
+  display: block; 
+}
+*/
+
+/*
+.float	{ 
+  float: left; 
+  margin-right: 10px; 
+  clear: right; 
+}
+*/
+
+/*
+acronym { 
+  cursor: help; 
+}
+*/
+
+/*
+.sublinks a,
+.sublinks a:link,
+.sublinks a:visited,
+.sublinks a:active,
+.sublinks a:hover { 
+  font-weight: 
+  bold; 
+}
+*/
+
+/*
+.leftlink {
+  float: left;
+  width: 150px;
+}
+*/
+
+/*
+.leftdate {
+  float: right;
+}
+*/
+
+/*		
+.comments 	{
+  width: 92%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #FFF;
+}	
+*/
+
+/*
+.comments-head	{
+  margin: 10px auto;
+  border-bottom: 1px solid #999;
+}		
+*/
+
+/*
+.comments-body {
+  padding: 3px 5px;
+  margin: 0 auto;
+}
+*/
+
+/*
+.comments-body p {
+  font: normal 12px/150% sans-serif;
+  color: #666;
+  margin: 2px;
+}
+*/
+
+/*
+.blogbodycom {
+  border-top: 1px solid #AAA;
+  padding-left: 3px;
+  margin-top: 5px;
+}
+*/	
+	
+/*	
+.inputBtn {
+  font-family: sans-serif;
+  color: #666;
+  border: 1px solid #999;
+  background-color: #D8E4E5;
+}
+*/
+			
+/*		
+#TextDisplay {
+  margin: 10px auto;
+  width: 95%; 
+  background-color: #eee; 
+  border: 1px solid #999;
+  padding: 5px;
+}
+*/
+			
+/*	
+.postpic {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+*/
+
+
+
+
+
