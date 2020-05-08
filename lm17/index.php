@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="em">  
+      <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+            <link rel="stylesheet" href="css/v4.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+            <title>L&oacute;gicas  Modales</title>
+      </head>
+
+      <body>
+      <div id="pageWrapper">
+      
+      <hr class="hide" />
+      
+      <div id="masthead" class="inside">
+            <h1>L&oacute;gicas Modales</h1>
+      </div>
+
+      <hr class="hide" />
+
+      <div class="hnav"> 
+      
+     
+      </div> <!-- End HNAV -->
+      
+      <div id="outerColumnContainer">
+            <div id="innerColumnContainer">
+            
+                  <hr class="hide" />
+
+                  <div id="leftColumn">
+                        <div class="inside">
+<div class="vnav">
+
+<center>
+<img src="images/mondrian.jpg" alt= "[ -mondrian- ]"/>
+</center>
+
+	<h3>Home Page</h3>
+	<ul>
+      <li><a href="index.php#top">Introducci&oacute;n</a></li>
+      <li><a href="index.php#horarios">Horarios</a></li>
+      <li><a href="index.php#correlativas">Correlativas</a></li>
+      <li><a href="index.php#evaluacion">Evaluaci&oacute;n</a></li>
+    </ul>
+		
+	<h3>Contenido del Curso</h3>
+	<ul>
+      <li><a href="contenido.php#top">Temario</a></li>
+      <li><a href="contenido.php#slides">Slides del Curso</a></li>
+      <li><a href="contenido.php#top">Ejercicios Pr&aacute;cticos</a></li>
+      <li><a href="contenido.php#bibliografia">Bibliograf&iacute;a</a></li>
+    </ul>
+
+
+	<h3>Administrativo</h3>
+	<ul>
+      <li><a href="preinscripcion.php">Pre-inscripci&oacute;n</a></li>
+    </ul>
+
+        
+</div> <!-- End VNAV -->
+
+<br/>
+
+</div> <!-- End INSIDE -->
+                        
+</div>
+
+<hr class="hide" />
+
+<div id="rightColumn">
+<div class="inside">
+
+</div>
+</div>
+<div id="contentColumn">
+	<hr class="hide" />
+	<a name="skipToContent"></a>
+	<div class="inside"><h2>L&oacute;gicas Modales</h2>
+
+El curso <strong>L&oacute;gicas Modales </strong> se dictar&aacute; en el 1er Cuatrimestre de 2017. Los docente a cargo del curso son:
+
+<ul>
+<li><a href="http://cs.famaf.unc.edu.ar/~careces"><strong>Carlos Areces</strong></a></li>
+<li><a href="http://cs.famaf.unc.edu.ar/~rfervari"><strong>Raul Fervari</strong></a></li>
+</ul>
+
+<p>
+                                                                        La <strong><a href="preinscripcion.php">pre-inscripci&oacute;n</a></strong> al curso est&aacute; abierta. Preinscribite ya! Y particip&aacute; del sorteo de una batidora el&eacute;ctrica! (ojo, es broma, no vengan a reclamar despues...). 
+</p>
+
+<h3>Horarios</h3>
+<a name="horarios"></a>
+
+<p>
+                                                                                                                                                                                                                                                                El curso se dicta dos veces por semana:
+</p>
+
+                                                                                                                                                                                                                                                                <ul>
+                                                                                                                                                                                                                                                                <li>Lunes: 16hs -- 18hs, aula 13.</li>
+                                                                                                                                                                                                                                                                               <li>Miércoles: 17hs -- 19hs, aula 27.</li>                                                                                                                                                                                                             </ul>
+
+                                                                                                                                                                                                                                                                                                                                                             <p>                                                                                                                    La primera reunión será el Lunes 13 de Marzo a las 16hs en el Aula 13 y allí decidiremos el horario exacto de las siguientes clases.  
+</p>
+                                                                                                                                                                                                                                                                
+<h3>Correlativas</h3>
+<a name="correlativas"></a>
+
+<p>
+Como materia optativa de la Lic. en Ciencias de la Computaci&oacute;n el curso tiene como correlativa la materia 
+Introducci&oacute;n a la L&oacute;gica y la Computaci&oacute;n.
+</p>
+
+<p>
+El curso no asume conocimientos previos de l&oacute;gicas modales, pero si vamos a asumir buen conocimiento de l&oacute;gica proposicional y conocimiento b&aacute;sico de l&oacute;gica de primer orden.  El curso puede tomarse tambíen como materia de los doctorados de FaMAF.  Los alumnos de doctorado tendrán que realizar ejercicios adicionales. 
+</p>
+
+
+<h3>Evaluaci&oacute;n</h3>
+<a name="evaluacion"></a>
+
+<p>
+Se tomar&aacute;n dos evaluaciones parciales y se deber&aacute;n entregar ejercicios de las pr&aacute;cticas regularmente para su correcci&oacute;n. 
+</p>
+
+</div>
+					</div>
+					
+          
+<div class="clear mozclear"></div>
+				</div>
+			</div>
+			<div class="hide" id="nsFooterClear"><!-- for NS4s sake --></div>
+			<hr class="hide" />
+			<div id="footer" class="inside">
+
+<p style="margin:0;">
+	<span style="color:#cc9;">
+<a href="http://validator.w3.org/check/referer">
+                 <img src="images/xhtml10.png" align="middle" alt="xhtml" width="80" height="15" style="border-width:0;"/>
+             </a>
+        &copy; 2008 Maintained by Areces. Last updated: 15-02-2017.
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="images/css.png"  align="middle" alt="CSS" width="80" height="15" style="border-width:0;"/>
+             </a>
+        </span>
+</p>
+
+			</div>
+			<hr class="hide" />
+		</div>
+	</body>
+</html>
