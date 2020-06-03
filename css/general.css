@@ -3,7 +3,7 @@
 
 
 body, p {
-  font: 12px/170% sans-serif;
+  font: 14px/170% sans-serif;
   color: #6e6e6f;
 }
 
@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-  font: normal 12px/12px sans-serif;
+  font: normal 14px/14px sans-serif;
   margin: 0 0 1px 0;
   text-align: left;
   text-transform: uppercase;
@@ -79,13 +79,13 @@ a:hover	{
 
 a.side:link,
 a.side:visited{
-  font: normal 12px/120% sans-serif;
+  font: normal 14px/120% sans-serif;
   color:#9ed7ec;
 }	
 
 a.side:active,
 a.side:hover	{ 
-  font: normal 12px/120% sans-serif;
+  font: normal 14px/120% sans-serif;
   color: #8fc3d6; 
 }
 
@@ -162,119 +162,5 @@ a.side:hover	{
      good browsers. */
   z-index:3;
 }
-
-
-/*
-.block	{ 
-  display: block; 
-}
-*/
-
-/*
-.float	{ 
-  float: left; 
-  margin-right: 10px; 
-  clear: right; 
-}
-*/
-
-/*
-acronym { 
-  cursor: help; 
-}
-*/
-
-/*
-.sublinks a,
-.sublinks a:link,
-.sublinks a:visited,
-.sublinks a:active,
-.sublinks a:hover { 
-  font-weight: 
-  bold; 
-}
-*/
-
-/*
-.leftlink {
-  float: left;
-  width: 150px;
-}
-*/
-
-/*
-.leftdate {
-  float: right;
-}
-*/
-
-/*		
-.comments 	{
-  width: 92%;
-  margin: 0 auto;
-  padding: 5px;
-  background-color: #FFF;
-}	
-*/
-
-/*
-.comments-head	{
-  margin: 10px auto;
-  border-bottom: 1px solid #999;
-}		
-*/
-
-/*
-.comments-body {
-  padding: 3px 5px;
-  margin: 0 auto;
-}
-*/
-
-/*
-.comments-body p {
-  font: normal 12px/150% sans-serif;
-  color: #666;
-  margin: 2px;
-}
-*/
-
-/*
-.blogbodycom {
-  border-top: 1px solid #AAA;
-  padding-left: 3px;
-  margin-top: 5px;
-}
-*/	
-	
-/*	
-.inputBtn {
-  font-family: sans-serif;
-  color: #666;
-  border: 1px solid #999;
-  background-color: #D8E4E5;
-}
-*/
-			
-/*		
-#TextDisplay {
-  margin: 10px auto;
-  width: 95%; 
-  background-color: #eee; 
-  border: 1px solid #999;
-  padding: 5px;
-}
-*/
-			
-/*	
-.postpic {
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  padding: 5px;
-}
-*/
-
-
-
 
 
