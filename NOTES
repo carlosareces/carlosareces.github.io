@@ -1,5 +1,7 @@
 correr 
    areces@fire:~/Site$ python -m SimpleHTTPServer 1337
 
-y mirar con chrome en 
+y mirar con chrome (en incognito para que no haga cache) en 
    http://localhost:1337/
+
+
