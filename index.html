@@ -6,12 +6,8 @@
   
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script> 
-    	$(function(){
-      	$("#includedContentMenu").load("leftmenu.html"); 
-    	});
-    </script>
 
+    
     <meta name="google-site-verification" content="q5Yccm9wpkQMOiAWyizysX8xNrOzL9iRXqj22wotIyQ" />
     <meta name="description" content="Home Page of Carlos Areces" />
     <meta name="keywords" content="logic, hybrid logic, computational logics, modal logics" />
@@ -76,12 +72,20 @@
 	  
         </div><!--rightcontent-->
 	
-	<div id="includedContentMenu"></div>
+	<div data-includeHTML="_leftmenu.html"></div>
 
       </div>
       <p>
 	&nbsp;<br />
       </p>
     </div>    
+
+    <script>
+      $(document).ready(function () {
+      $("div[data-includeHTML]").each(function () {                
+      $(this).load($(this).attr("data-includeHTML"));
+      });
+      });
+    </script>
   </body>
 </html>
