@@ -1,0 +1,599 @@
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  screen.css : 2004-06-28 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  This stylesheet defines the layout as it appears on screen by importing 
+*  those stylesheets which should be used to render the layout on screen.
+*
+*  CSS Hacks Reference:
+*    http://www.dithered.com/css_filters/css_only/index.php
+*******************************************************************************/
+
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  base.css : 2005-06-28 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  base set of stylesheet rules needed to form the layout, and layout only.
+*  color and fonts and such are not handled here.
+*  side column widths are defined in EMs. see base_pixels.css for a pixel
+*  version instead.
+*******************************************************************************/
+
+
+a:link,
+a:visited {
+  color: #91915b;
+  text-decoration:none;
+}
+
+a:active,
+a:hover {
+  color: #dede8b;
+  text-decoration:none;
+}
+
+#pageWrapper
+{
+	margin: 0;
+	width: auto;
+	min-width: 500px;
+}
+#outerColumnContainer
+{
+	z-index: 1;
+	border-color: #fff;	/* set default color to white. set the real
+				   color inside colors.css */
+	border-style: solid;
+	border-width: 0 15em;	/* sets the width of the borders used to create
+				   the left and right columns' background 
+				   color. */
+}
+#innerColumnContainer
+{
+	z-index: 2;
+	width: 100%;
+}
+* html #innerColumnContainer
+{
+	position: relative;	/* fix a render bug in IE under certain
+				   conditions */
+}
+#contentColumn
+{
+	margin: 0 -1px;		/* without this, boxes stop floating next to 
+				   each other */
+	width: 100%;
+}
+#leftColumn, #rightColumn, #contentColumn
+{
+	float: left;
+	position: relative;	/* IE has a display/render bug with non-floated 
+				   block elements inside floated block elements. 
+				   setting position:relative on the floating
+				   element seems to resolve this. */
+	z-index: 10;
+	overflow: visible;	/* fix for IE italics bug */
+}
+#rightColumn
+{
+	float: right;		/* floating this right allows for the right
+				   column block to appear before the content
+				   column in the flow of the document. doing
+				   this allows for any easy 3 column layout
+				   in NN4.
+
+				   There is certainly a lot, in terms of layout
+				   'theory' about how the flow of the document
+				   should be. I won't get into it here. */
+	width: 15em;
+	margin: 0 -15em 0 1px;	/* same as in the #leftColumn selector up 
+				   above. */
+}
+#leftColumn
+{
+	width: 15em;
+	margin: 0 1px 0 -15em;	/* like in the #contentColumn selector, without
+				   the 1px margin on the opposite side of the 
+				   box, boxes stop floating next to each 
+				   other */
+}
+#footer
+{
+	position: relative;
+}
+#masthead h1
+{
+	display: inline;	/* personal preference to keep the header 
+				   inline. you could just as easily change 
+				   padding and margins to 0. */
+}
+.clear
+{
+	clear: both;
+	padding-bottom: 1px;	/* for Gecko-based browsers */
+	margin-bottom: -1px;	/* for Gecko-based browsers */
+}
+.hide, #oldBrowserNotice, .ieSixCharDupBug
+{
+	/* hide elements that CSS-targeted browsers shouldn't show */
+	display: none !important;
+}
+#contentColumn
+{
+	border-width: 0;	/* reset value from that in the version 4 
+				   stylesheet. this isn't in borders.css because
+				   were you to create a print.css and not 
+				   include borders.css, then the v4 border would
+				   still remain when you print. */
+}
+/*
+	The below block of CSS is invalid, and will invalidate this stylesheet.
+	So it is up to you to decide how you want to handle this. The below CSS
+	is a fix for IE/Win to help it better handle text that is wider than 
+	the available area. It does not handle this as expected, and forces the
+	floated elements to start stacking. This is a very undesirable thing.
+	Until a CSS-compliant way is devised, this CSS block will have to do.
+
+	So, do you live with invalid CSS? This comes down to a sort of markup
+	morals issue. Some people live and die by w3 validation. If it isn't
+	valid, it isn't good. Others don't validate at all, rather focusing
+	on "real-world" results.
+
+	I think the answer might be somewhere in the middle, but perhaps 
+	leaning torwards w3 validation. It's good to work torwards validation.
+	Indeed, I think documents should be able to validate against a w3
+	or other validator. However there are times where you will find reason
+	to explicitly defy the specs and include invalid markup or CSS.
+
+	It is already done once in the markup of this layout, using the name
+	attribute of an anchor tag. That attribute is deprecated in XHTML 1
+	but without it, backwards compatibility at even the most base level
+	is destroyed. So I purposely break the spec in order to provide that
+	backwards compatibility. Remove the one line, and it validates fine.
+
+	I am willing to break the markup when I have a good reason. And I think
+	this is the same type of situation. IE breaks horribly without this 
+	fix. I am willing to include this invalid line of CSS in order to 
+	keep IE happy. Using the * html selector, I know that CSS-compliant
+	browsers (the ones where validation matters) won't apply this CSS block.
+	Pretty much ONLY IE will apply this CSS. I have a reason to break the
+	CSS, I am fairly certain of its effect on other browsers (none), and
+	so I include it here.
+
+	I could have used the conditional comments that IE supports in it's
+	proprietary side of HTML. However that requires _every_ document to
+	contain the extra lines necessary to do this. This removes any
+	central point of control over at least some of the CSS being
+	applied.
+
+	In a template(d) environment, perhaps I would take that alternate route.
+	But here, where I'm not in a template(d) environment, I choose to add
+	this directly into the CSS.
+*/
+* html #pageWrapper
+{
+	word-wrap: break-word;
+}
+
+/******************************************************************************/
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  hnav.css : 2005-08-31 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  responsible for the horizontal navigation elements, one of which is usually
+*  placed below the masthead but on top of the columns.
+*
+*  this seems awfully complex for something seemingly so simple, no? the big
+*  issue here is we need to make the menu items inline elements. we could make
+*  them block elements and float them left or right, but that creates a lot of
+*  problems with compatibility and how elements are ordered on-screen versus
+*  source. just trust me on this, inline is the way to go here.
+*
+*  the main reason people would float these elements rather than go inline is
+*  because padding and margin values have an effect on surrounding elements.
+*  meaning if an element is 20 pixels tall, and has 5 pixels of padding on
+*  top and bottom, a browser is going to treat that element as 30 pixels tall 
+*  when rendering the page. but for an inline element (versus a block element)
+*  the browser treats it as 20 pixels tall. That padding will still be applied
+*  and if you've got a background color on this element, you'll see that color
+*  extend 5 pixels into the elements immediately above and below this inline
+*  element with padding. 
+*
+*  in short: vertical padding on inline elements can make things look really
+*            bad. 
+
+*  so we need to work around it. thus all of the hacks you see in this 
+*  stylesheet.
+*******************************************************************************/
+
+.hnav
+{
+	border-bottom: solid 1px #fff;
+	text-align: center;
+}
+.hnav, .hnav ul li a
+{
+	/* need to middor veritcal padding on .hnav and child anchor elements
+	 * because the anchors are _not_ block elements. since they are not
+	 * block elements web browsers will not expand .hnav to contain them
+	 * even with the extra padding. by applying the same padding to both
+	 * the parent .hnav _looks_ like its containing the child anchor
+	 * elements. 
+	 */
+	padding-top: 3px;
+	padding-bottom: 4px;
+}
+.hnav ul, .hnav ul li
+{
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.hnav ul li a
+{
+	margin: 0 -1px 0 0;
+	padding-left: 10px;
+	padding-right: 10px;	/* short-hand padding attribute would overwrite
+				   top/bottom padding set in a previous rule */
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	white-space: nowrap;
+}
+.hnav ul li a:link, .hnav ul li a:visited, .hnav ul li a:active, .hnav ul li a:hover
+{
+	text-decoration: none;
+}
+.hnav ul li span.divider
+{
+	display: none;
+}
+* html .hnav ul li, * html .hnav ul li a
+{
+	width: 1%; /* IE/Mac needs this */
+	display: inline-block;	/* IE/Mac needs this */
+	/* \*/
+		width: auto;
+		display: inline; 
+		position: relative;
+	/* reset above hack */
+}
+* html .hnav, * html .hnav ul a
+{
+	/* \*/ height: 0.01%; /* hasLayout hack to fix render bugs in IE/Win. 
+				 IE/Mac will ignore this rule. */
+}
+* html .HNAV
+{
+	padding: 0;	/* IE5/Win will resize #hnav to fit the heights of its
+			   inline children that have vertical padding. So this
+			   incorrect case selector hack will be applied only by
+			   IE 5.x/Win */
+}
+
+/******************************************************************************/
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  vnav.css : 2004-07-21 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  responsible for the vertical navigation elements commonly found in the left
+*  and / or right columns.
+*******************************************************************************/
+
+.vnav ul, .vnav ul li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: block;
+}
+.vnav ul
+{
+	border: solid 1px #000;
+	border-bottom-width: 0;
+}
+.vnav ul li
+{
+	border-bottom: solid 1px #000;
+}
+.vnav ul li a
+{
+	display: block;
+	text-decoration: none;
+	padding: 2px 10px;
+}
+* html .vnav ul li a/* hide from IE5.0/Win & IE5/Mac */
+{
+	height: 1%;
+}
+* html .vnav ul
+{
+	position: relative;	/* IE needs this to fix a rendering problem */
+}
+.vnav h3
+{
+	/* perhaps this belongs partly in gutters.css and partly in 
+	   fonts.css. However, the heading size for vnav elements is
+	   controlled here because it is a specific vnav visual element
+	   rather than something that's going to be applied to the whole
+	   layout. So that if you were to remove vnav.css from your
+	   layout, you wouldn't have any extra, unused CSS in the rest
+	   of your stylesheets. */
+
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: 126%;
+}
+
+/******************************************************************************/
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  colors.css : 2004-06-28 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  defines background and foreground colors of elements within the layout.
+*  sites that want to use different color schemes for different sub-sections
+*  of a website need only make different versions of this stylesheet and link
+*  or import them as need. The other stylesheets can be shared across the
+*  entire site.
+*******************************************************************************/
+
+body
+{
+	background-color: #665;
+	color: #fff;
+}
+#outerColumnContainer
+{
+	border-left-color: #eec;	/* left hand column background color */
+	border-right-color: #bb8;	/* right hand column background color */
+}
+#masthead
+{
+	background-color: #885;
+	color: #fff;
+}
+#footer
+{
+	background-color: #885;
+	color: #fff;
+}
+#outerColumnContainer, #contentcolumn	/* selector case hack to reset version 4
+					   stylesheet setting */
+{
+	background-color: #fff;		/* this sets the background color on the
+					   center column */
+	color: #000;
+}
+#leftColumn, #rightColumn, #contentColumn
+{
+	color: #000;
+}
+.vnav ul li a
+{
+	color: #312f21;
+	background-color: #cc9;
+}
+#rightColumn .vnav ul li a:hover, .vnav ul li a:hover
+{
+	background-color: #336;
+	color: #fff;
+}
+#rightColumn .vnav ul li a
+{
+	color: #336;
+	background-color: #ddb;
+}
+.hnav, .hnav ul li a
+{
+	background-color: #cc9;
+	color: #336;
+}
+.hnav ul li a:hover
+{
+	background-color: #336;
+	color: #fff;
+}
+#pageWrapper, #innerColumnContainer, #masthead, #footer, .hnav
+{
+	border-color: #000;
+}
+
+/******************************************************************************/
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  gutters.css : 2004-07-06 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  handles the whitespace between and within elements; such as margins and 
+*  padding.
+*******************************************************************************/
+
+body
+{
+	margin: 0;
+	padding: 2em;		/* remove this padding if you want the layout to
+				   stretch from edge to edge of the viewport. */
+}
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 1em 0;		/* specifically define this for Opera's sake,
+				   and also for better consistency across 
+				   all platforms  */
+}
+.inside
+{
+	padding: 0 1.5em;	/* this padding is applied to every major box 
+				   within the layout for a uniform gutter 
+				   between borders 
+
+				   _NOTE_: a small glitch in IE seems to appear
+				   if this class has vertical padding applied
+				   to it. so in cases where you want to add 
+				   vert padding, use the parent element. margin
+				   values here don't work because .inside has
+				   a key role in border generation */
+}
+#leftColumn, #centerColumn, #rightColumn, #masthead
+{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;	/* this is the vert padding talked about in the
+				   previous selector. */
+}
+#masthead, #footer
+{
+	padding: 1em;
+}
+.vnav
+{
+	margin: 1em 0;
+}
+html>body #footer
+{
+	padding-bottom: 1.01em;	/* this is to fix a bug in mozilla that results
+				   in a 1px line of white below the footer when
+				   the document gets very long. extremely long
+				   documents may generate the bug again. if
+				   you experience that, increasing this value
+				   may help. i think this is related to moz's
+				   off-by-one troubles as the bug does not
+				   occur in any other browser */
+}
+/******************************************************************************/
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  borders.css : 2004-07-29 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  this stylesheet defines any and all borders that are rendered on the layou.
+*  this includes the left and right-hand borders of the #outerColumnContainer
+*  element which are used as the backgrounds for the left and right columns.
+*******************************************************************************/
+
+#pageWrapper
+{
+	border-style: solid;	/* explicitly defined within eact selector in 
+				   case you want change border styles (to mix 
+				   it up) between elements */
+	border-width: 0 1px;	/* puts a border on the left and right sides of
+				   the page. #masthead and #footer will handle 
+				   the top and bottom borders */
+}
+#outerColumnContainer
+{
+	/* the borders used to create/reserve space for the side columns are
+	   now defined in base.css because they are an integral part of
+	   the layout. */
+}
+#innerColumnContainer
+{
+	border-style: solid;
+	border-width: 0 1px;	/* puts borders between center and the side 
+				   columns. */
+	margin: 0 -1px;		/* compensation for the borders because of
+				   100% width declaration on this object */
+}
+* html #outercolumncontainer
+{
+	/* IE5.0/Win fix for 1px whitespace between masthead and body. */
+	margin-top: -1px;
+	border-top: solid 1px #000;
+}
+#masthead
+{
+	border-style: solid;
+	border-width: 1px 0;	/* handles the top of the layout's border and the
+				   bottom of the masthead section */
+}
+.hnav
+{
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+#footer
+{
+	border-style: solid;
+	border-width: 1px 0;	/* handles the top of the footer section and 
+				   the bottom of the entire layout */
+}
+
+/******************************************************************************/
+
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  fonts.css : 2004-06-28 : Ruthsarian Layouts
+* ------------------------------------------------------------------------------
+*  handles the font type (family), sizes, line-height, alignment, and any other
+*  properties relating to fonts - with the exception of color.
+*
+*  Perhaps font color declarations should be in this file as well. 
+*  However, certain CSS validators (hello w3!) will complain if colors
+*  and background colors are not declared in the same selector or
+*  at least within the same stylesheet. So font colors, including links,
+*  are defined in colors.css.
+*******************************************************************************/
+
+body
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 100.1%;	/* font sizing approach recommended by Dave 
+				   Silvester on the css-discuss list. "the 
+				   .1 is important." */
+}
+#pageWrapper
+{
+	font-size: 80%;
+}
+#footer
+{
+	text-align: center;
+}
+/* :root is an invalid pseudo class but mozilla knows it */
+:root code
+{
+	font-size: 120%;	/* monospace fonts are typically smaller that 
+				   'normal' fonts under Mozilla. */
+}
+
+/*
+	Time to try and get all the heading elements to the same size 
+	regardless of browser. (IE seems to put them a big bigger
+	than Mozilla, typically.)
+*/
+h1
+{
+	font-size: 210%;
+}
+h2
+{
+	font-size: 180%;
+}
+h3
+{
+	font-size: 140%;
+}
+h4
+{
+	font-size: 126%;
+}
+h5
+{
+	font-size: 110%;
+}
+h6
+{
+	font-size: 100%;
+}
+
+/******************************************************************************/

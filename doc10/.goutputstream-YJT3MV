@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="em">  
+      <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+            <link rel="stylesheet" href="css/v4.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+            <title>Primera Jornada de Doctorandos de Computacion</title>
+      </head>
+
+      <body>
+      <div id="pageWrapper">
+      
+      <hr class="hide" />
+      
+      <div id="masthead" class="inside">
+            <h1>Primera Jornada de Doctorandos de Computaci&oacute;n <br/> FaMAF, Universidad Nacional de C&oacute;rdoba</h1>
+            <h2>6 de Diciembre, 2010</h2>
+      </div>
+
+      <hr class="hide" />
+
+      <div class="hnav"> 
+      
+     
+      </div> <!-- End HNAV -->
+      
+      <div id="outerColumnContainer">
+            <div id="innerColumnContainer">
+            
+                  <hr class="hide" />
+
+                  <div id="leftColumn">
+                        <div class="inside">
+<div class="vnav">
+	<h3></h3>
+	<ul>
+        <li><a href="index.php#introduccion">Introducci&oacute;n</a></li>
+        <li><a href="index.php#participantes">Participantes</a></li>
+        <li><a href="index.php#programa">Programa</a></li>
+        <li><a href="wisdom.php">Wisdom</a></li>
+    </ul>
+		
+        
+</div> <!-- End VNAV -->
+
+<br/>
+
+</div> <!-- End INSIDE -->
+                        
+</div>
+
+<hr class="hide" />
+
+<div id="rightColumn">
+<div class="inside">
+
+</div>
+</div>
+<div id="contentColumn">
+	<hr class="hide" />
+	<a name="skipToContent"></a>
+	<div class="inside">
+	
+<a name="introduccion"></a>
+<h3>Introducci&oacute;n</h3>
+
+<p>
+Esta es la primera Jornada de Doctorandos de Computaci&oacute;n de la
+Facultad de Matem&aacute;tica, Astronom&iacute;a y F&iacute;sica (FaMAF).
+</p>
+
+<p>
+En esta jornada, los estudiantes del Doctorado en Ciencias de la
+Computaci&oacute;n de FaMAF expondr&aacute;n sus intereses de investigaci&oacute;n y los
+aspectos m&aacute;s relevantes de su trabajo. 
+</p>
+
+<p>
+Uno de los principales
+objetivos de la jornada es dar a conocer las l&iacute;neas de investigaci&oacute;n
+que los doctorandos de Computaci&oacute;n del FaMAF est&aacute;n desarrollando,
+y por eso invitamos a todos los alumnos y docentes (no s&oacute;lo a los
+de Computaci&oacute;n) a concurrir.
+</p>
+
+<a name="participantes"></a>
+<h3>Participantes Confirmados <a href="index.php#introduccion">^</a></h3>
+
+Aca ponemos la lista de todos, en orden alfabetico, con e-mail y numero de 
+oficina.  Super escrachados :). Asi el que este interesado los puede buscar y/o/implica/forall contactar.  
+
+<ul>
+    <li> Matias Lee [<i>lee.matias AT gmail.com</i>]<br/>
+        <b>A Refinement Based Notion of Non-Interference for Interface Automata: Compositionality, Decidability and Synthesis</b><br/>
+
+<p>
+Interface automata (IA) introduce a framework to model stateful interfaces.  Interface structures for security (ISS) extend IA to cope with security properties. 
+In this work, we argue that bisimulation-based non interference is not quite appropriate to characterize security on ISSs.
+We instead introduce a refinement-based variant of non-interference that fits better in this context.
+Moreover, we show that these new properties are not preserved by composition, but give sufficient conditions to ensure compositionality.
+We give two algorithms. The first one determines if an ISS satisfies the refinement-based non-interference property. The second one, determines if an ISS can be made secure by controlling some input actions, and if so, synthesizes the secure ISS.
+</p>
+        </li>
+
+    <li> Ra&uacute;l Fervari           [<i>rfervari AT gmail.com</i>] <br/> 
+    <b>L&oacute;gicas Modales: Cl&aacute;sicas y Din&aacute;micas</b> <br/>
+    
+    <p>En la charla se presentar&aacute; una introducci&oacute;n a algunos lenguajes l&oacute;gicos simples para mostrar la importancia 
+de este tipo de lenguajes en nuestro trabajo (aplicaciones, preguntas a responder, resultados generales, etc.), y sus
+limitaciones (expresividad, complejidad, etc.). Luego se proceder&aacute; a introducir de una manera
+m&aacute;s formal el lenguaje modal b&aacute;sico, qu&eacute; nos permite decir acerca de estructuras relacionales, y se mostrar&aacute; por que no 
+resulta suficiente para explorar todas las caracter&iacute;sticas de dichas estructuras, haciendo referencia a propiedades 
+din&aacute;micas de los modelos. Para estudiar estas ideas, se presentar&aacute;n dos lenguajes creados con este fin: memory logic y
+swap logic. El primer lenguaje se introducir&aacute; formal e informalmente a modo de ejemplo, mientras que el segundo, 
+por ser espec&iacute;ficamente el tema en el que estamos trabajando en el momento, se presentar&aacute; mediante algunos resultados 
+preliminares y discutiendo problemas a&uacute;n sin resolver.
+    </p>
+    </li>
+
+    <li> Hern&aacute;n Casal&aacute;nguida      [<i>9dearea AT gmail.com</i>]<br/>
+<b>Desarrollo de Familias de Aplicaciones Web con Transformaci&oacute;n de Modelos</b>
+
+<p>
+El problema general a estudiar es el de definir una metodolog&iacute;a  apropiada para 
+el desarrollo de familias de aplicaciones web (FAW)  intensivas en datos e incluyendo aplicaciones 
+de internet ricas. 
+Actualmente existe una presi&oacute;n muy grande para disminuir los costos y los tiempos de desarrollo 
+de aplicaciones web; al mismo tiempo los diversos atributos de calidad de este tipo de 
+software se ven afectados por el estilo de desarrollo desde cero. La disponibilidad de 
+m&eacute;todos, conceptos de modelado, abstracciones b&aacute;sicas y por supuesto frameworks de desarrollo 
+permitir&iacute;a contribuir de manera muy importante a esta problem&aacute;tica.
+La  ingenier&iacute;a de FAW permitir&aacute; a las empresas mayores utilidades, mayor calidad en los 
+productos y tiempos m&aacute;s cortos de desarrollo al poder construir las aplicaciones web de una FAW 
+apoy&aacute;ndose en una  infraestructura reutilizable.
+A pesar que la ingenier&iacute;a de familias de aplicaciones (IFA) es un &aacute;rea que empez&oacute; al comienzo 
+de los 80, casi no se ha estudiado la ingenier&iacute;a de FAW y la investigaci&oacute;n permitir&aacute; 
+mejorar y  comprender mejor esta nueva rama de la IFA. 
+</p>   
+</li>    
+
+
+    <li> Cecilia Kilmurray                      [<i>ckilmurray AT dc.exa.unrc.edu.ar</i>]<br/> 
+<b>Utilizando L&oacute;gicas De&oacute;nticas y Temporales para la Especificaci&oacute;n de Sistemas Tolerantes a Fallas</b><br/>
+
+<p>
+En la actualidad la tolerancia a fallas cada vez adquiere mas importancia, esto se debe a que cada d&iacute;a hay mas sistemas cr&iacute;ticos en donde es necesario garantizar cierto comportamiento deseado a&uacute;n ante la ocurrencia ocasional de fallas. Ejemplos de estos sistemas son: centrales nucleares, aviones, dispositivos m&eacute;dicos y cualquier otro sistema que se caracterice por un funcionamiento continuo, durante largo plazos de tiempo, y sin posibilidad de intervenci&oacute;n.
+
+El inter&eacute;s en este tipo de sistemas, con altos niveles de disponibilidad y confiabilidad, ha llevado a un gran desarrollo a esta &aacute;rea de la computaci&oacute;n.
+
+Sin embargo una caracter&iacute;stica sorprendente de la tolerancia a fallas es la falta de soluciones de prop&oacute;sito general, o ambientes para el an&aacute;lisis de sistemas tolerantes a fallas. La amplia mayor&iacute;a de las soluciones a problemas de tolerancia a fallas son ad hoc, y atacan problemas particulares en contextos espec&iacute;ficos. En el caso de t&eacute;cnicas para tolerancia a fallas en software, las soluciones m&aacute;s importantes tienen que ver con redundancia o diversidad.
+
+En esta charla presentar&eacute; brevemente las caracter&iacute;sticas b&aacute;sicas de algunos frameworks l&oacute;gicos que pensamos utilizar para razonar sobre tolerancia a fallas. En particular mostrar&eacute; algunos ejemplos para ilustrar la capacidad de ciertas l&oacute;gicas de&oacute;nticas para capturar nociones relacionadas con tolerancia a fallas.
+
+Culminar&eacute; presentando algunas de las ideas de lo que respecta a an&aacute;lisis probabil&iacute;stico de propiedades de sistemas, como esto se relaciona con lo  antes explicado y el plan de trabajo a futuro.
+</p>
+</li>
+
+    <li> Renzo Degiovani                        [<i>rdegiovanni8 AT gmail.com</i>] <br/>
+
+
+<b>An&aacute;lisis Autom&aacute;tico basado en SAT aplicado a la Validaci&oacute;n de Requisitos de Software</b>
+
+<p>Existe una amplia variedad de notaciones para la descripci&oacute;n de requisitos de software, pero aquellas con una sem&aacute;ntica formal son particularmente apropiadas para el an&aacute;lisis. En particular, la notaci&oacute;n tabular de Parnas y el m&eacute;todo Software Cost Reduction (SCR) resultan convenientes para la descripci&oacute;n formal de requisitos, pues basan sus notaciones en formas adecuadas de organizar expresiones relacionales, de manera tal que su comprensi&oacute;n y manipulaci&oacute;n sea m&aacute;s efectiva.
+
+En esta charla discutiremos algunas ideas de c&oacute;mo atacar el problema de utilizar an&aacute;lisis basado en SAT para tareas ligadas a la validaci&oacute;n de requisitos de software especificados en las notaciones tabulares mencionadas, y aprovechando caracter&iacute;sticas propias de estas notaciones.
+
+Entre los objetivos de an&aacute;lisis se encuentran el conseguir documentos de requisitos completos y consistentes.
+
+Veremos que el an&aacute;lisis basado en SAT requiere, al igual que otras t&eacute;cnicas de an&aacute;lisis autom&aacute;tico, de mecanismos que contribuyan a su escalabilidad. Discutiremos uno particular, basado en abstracci&oacute;n, que resulta &uacute;til en el contexto de especificaciones tabulares.
+</p>
+</li>
+
+    <li> Romina Altamirano                      [<i>romina.altamirano AT gmail.com</i>]<br/> 
+    <b>Mejorando la traducci&oacute;n autom&aacute;tica a trav&eacute;s de la incorporaci&oacute;n de 
+conocimiento ling&uuml;&iacute;stico, simplificaci&oacute;n textual, y combinaci&oacute;n de motores de traducci&oacute;n</b>
+
+<p>
+ La traducci&oacute;n autom&aacute;tica es una tarea compleja porque requiere
+ an&aacute;lisis de texto de origen, resolver ambig&uuml;edades de diversos tipos y
+ generaci&oacute;n de texto en el idioma destino. Actualmente no existe un traductor de
+ prop&oacute;sito general que exitosamente haga su tarea en todos los idiomas y dominios,
+ Mejorar alg&uacute;n aspecto de la traducci&oacute;n autom&aacute;tica reducir&iacute;a notablemente el
+ trabajo de post-edici&oacute;n, entre esas mejoras que se pueden realizar estan la
+ de agregar conocimiento ling&uuml;&iacute;stico, simplificar el texto en una etapa de
+ pre-edici&oacute;n, y combinar motores de traducci&oacute;n para explotar mejor las
+ ventajas de cada uno de ellos.
+ </p>
+    </li>
+
+   <li> Valeria Bengolea                       [<i>vbengolea AT dc.exa.unrc.edu.ar</i>]<br/>
+   <b>Mejoras en la Generaci&oacute;n de casos de Test en Korat usando Criterios de Test</b>
+
+<p>
+La generaci&oacutu;n autom&aacute;tica de casos de test es una &aacute;rea de investigaci&oacute;n muy
+activa en la actualidad, dentro de la cual la generaci&oacute;n de casos de test
+para estructuras complejas alojadas en memoria din&aacute;mica, tales como &aacute;rboles
+balanceados, grafos, etc., es particularmente dif&iacute;cil. Korat es una herramienta/algoritmo 
+que resuelve este problema de manera bastante efectiva, mediante la exploraci&oacute;n exhaustiva 
+de potenciales casos de test. El mecanismo de constraint solving de Korat est&aacute; basado en 
+b&uacute;squeda (backtracking), y depende fuertemente de una poderosa t&eacute;cnica de poda.
+
+En esta charla presentar&eacute; una t&eacute;cnica para mejorar la generaci&oacute;n de
+casos de test de la manera realizada por Korat, guiando la b&uacute;squeda a
+trav&eacute;s de la consideraci&oacute;n de un criterio de test. Tal criterio se
+emplea para poder podar la b&uacute;squeda a&uacute;n m&aacute;s, pero de una manera
+similar a la utilizada por Korat.
+
+Presentar&eacute; la t&eacute;cnica junto con algunos resultados experimentales que
+muestran la performance de la t&eacute;cnica desarrollada para algunos
+criterios de test, y una comparaci&oacute;n con Korat est&aacute;ndar.
+</p>
+   
+   </li>
+
+    <li> Martin Dominguez                       [<i>mardom75 AT gmail.com</i>] <br/>
+    <b>Análisis de Dependencias no supervisado de dependencias basado en Gramática Biléxicas</b>
+
+<p>El ana 
