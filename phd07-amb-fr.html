@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>subject-long-fr</TITLE>
+<META NAME="description" CONTENT="subject-long-fr">
+<META NAME="keywords" CONTENT="subject-long-fr">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="subject-long-fr.css">
+
+</HEAD>
+
+<BODY >
+
+<H4> English version <a href="http://www.loria.fr/~areces/phd07-amb.html">here</a>.
+</H4>
+
+<P>
+
+<H4><A NAME="SECTION00000010000000000000">
+Title:</A>
+</H4> Construction automatique de mod&#232;les pour applications TAL
+
+<P>
+
+<H4><A NAME="SECTION00000020000000000000">
+Thematique:</A>
+</H4> 
+   
+<UL>
+<LI>Representation et gestion des connaissances
+</LI>
+<LI>Traitement de la Langue Naturelle et Communication Multimodale   
+   
+</LI>
+</UL>
+
+<P>
+
+<H4><A NAME="SECTION00000030000000000000">
+Directeur de these:</A>
+</H4> 
+Carlos Areces and Patrick Blackburn (DR2 INRIA, HDR)
+
+<P>
+
+<H4><A NAME="SECTION00000040000000000000">
+Equipe d'accueil:</A>
+</H4> TALARIS
+
+<P>
+
+<H4><A NAME="SECTION00000050000000000000">
+Sujet de These:</A>
+</H4>
+
+<P>
+Le r&#244;le crucial que joue l'inf&#233;rence dans de nombreuses applications TAL est
+actuellement largement reconnu. Des exemples classiques sont la v&#233;rification de
+la pertinence et de la coh&#233;rence d'une phrase parmi un dialogue donn&#233; (qui
+peuvent &#234;tre respectivement v&#233;rifi&#233;s en termes d'implication et de
+satisfiabilit&#233;) [Blackburn and Bos, Blackburn et al, 1998]. Des outils
+automatiques capables de g&#233;rer ces deux t&#226;ches (implication et satisfiabilit&#233;)
+sont aujourd'hui bien d&#233;velopp&#233;s, &#224; la fois pour les logiques classiques (comme
+la logique du premier ordre) et pour les langages sp&#233;cialement conçus pour la
+repr&#233;sentation de connaissances (comme les logiques de description).
+
+<P>
+La construction de mod&#232;les, qui requiert, &#233;tant donn&#233; un ensemble de formules,
+de v&#233;ritablement <SPAN  CLASS="textit">produire</SPAN> un mod&#232;le qui les satisfait, est d'un autre
+c&#244;t&#233; bien moins comprise, en particulier quand certaines propri&#233;t&#233;s
+structurelles (comme la minimalit&#233; de taille du domaine) sont requises pour le
+mod&#232;le. La construction de mod&#232;le sous contraintes structurelles est peut-&#234;tre
+m&#234;me plus fondamentale pour les applications TAL que l'implication et la
+satisfiabilit&#233;. Par exemple, des t&#226;ches TAL basiques comme la r&#233;solution
+d'expression r&#233;f&#233;rantes dans une dialogue se base sur la construction de mod&#232;les
+ad&#233;quats pour le discours jusque l&#224;.
+
+<P>
+Th&#233;oriquement et techniquement, la diff&#233;rence qui existe actuellement entre la
+t&#226;che d'inf&#233;rence de satisfiabilit&#233; et la t&#226;che d'inf&#233;rence de construction de
+mod&#232;les est &#233;norme. Tandis que des d&#233;monstrateurs de satisfiabilit&#233; tr&#232;s
+optimis&#233;s existent pour des langages logiques allant de la tr&#232;s faible logique
+propositionnelle &#224; des langages du premier ordre en passant par des langages
+modaux, il existe tr&#232;s peu d'outils pour la construction de mod&#232;les. Les deux
+seuls syst&#232;mes dignes d'&#234;tre mentionn&#233;s sont PARADOX
+(http://www.cs.chalmers.se/&nbsp;koen/folkung/) et Mace
+(http://www.cs.unm.edu/&nbsp;mccune/prover9/). Cependant, la t&#226;che de construction
+de mod&#232;les gagne depuis peu en int&#233;r&#234;t.
+
+<P>
+Durant cette th&#232;se, nous d&#233;velopperons et impl&#233;menterons des algorithmes pour
+la construction de mod&#232;les sous contraites structurelles, et &#233;tudierons des
+optimisations et des heuristiques. L'accent principal sera mis sur la
+construction de mod&#232;les pour les langages de repr&#233;sentation de connaissances
+(comme les logiques modales, de description et temporelles), en utilisant
+des contraintes structurelles typiques des t&#226;ches TAL.
+
+<P>
+
+<H4><A NAME="SECTION00000060000000000000">
+Contexte/Partenariats:</A>
+</H4>
+
+<UL>
+<LI>Cette th&#232;se pourra &#234;tre int&#233;gr&#233;e dans le travail actuel de
+   d&#233;veloppement et d'int&#233;gration des outils d'inf&#233;rence pour les t&#226;ches TAL
+   (comme le d&#233;monstrateur automatique pour logique hybride HyLoRes).
+
+<P>
+</LI>
+<LI>La th&#232;se peut &#234;tre utilis&#233;e pour faire le lien avec le travail de
+   Caferra et Peltier de l'Institut d'Informatique et Mathematiques Appliqu&#233;es
+   de Grenoble.
+
+<P>
+</LI>
+</UL>
+
+<P>
+
+<H4><A NAME="SECTION00000070000000000000">
+Bibliography:</A>
+</H4>
+
+<P>
+A. Artosi and G. Governatori.  Labelled Model Modal Logic. In Proc. of
+CADE12 Workshop on Automated Model Building, 1994.
+
+<P>
+P. Blackburn and J. Bos. Representation and Inference for Natural
+Language: A First Course in Computational Semantics. CSLI Press, 2005.
+
+<P>
+P. Blackburn, J. Bos, M. Kohlhase and H. de Nivelle. Automated Theorem
+Proving for Natural Language Understanding. Proc. of CADE-15, 1998.
+
+<P>
+R. Caferra, A. Leitsch and N. Peltier. Automated Model Building.
+Applied Logic Series 31, Kluwer, 2004.
+
+<P>
+R. Caferra and N. Peltier. Model Building and Interactive Theory
+Discovery. In Proceeding of Tableaux'95, LNAI 918, pages
+154-168. Springer, 1995.
+
+<P>
+R. Caferra and N. Peltier. Combining inference and disinference rules
+with enumeration for model building. Workshop on model-based
+reasoning. IJCAI'97, 1997.
+
+<P>
+R. Caferra and N. Peltier. Disinference rules, model building and
+abduction. ``Logic at work. Essays dedicated to the memory of Helena
+Rasiowa'' (Part 5:Logic in Computer Science,
+Chap. 20). Physica-Verlag, 1998.
+
+<P>
+R. Caferra and N. Zabel. Building models by using tableaux extended by
+equational problems. Journal of Logic and Computation, 3, 1993.
+
+<P>
+H. Chu and D. Plaisted. Model finding in semantically
+guided instance-based theorem-proving. Fundamenta Informaticae,
+21, 1994.
+
+<P>
+M. Denecker and D. de Schreye. On the duality of abduction and
+model generation in a framework for model generation with equality.
+Theoretical Computer Science, 122:225-262, 1994.
+
+<P>
+C. Fermuller and A. Leitsch. Hyperresolution and automated model
+building. Journal of Logic and Computation, 6(2):173-203, 1996.
+
+<P>
+C. Fermuller and A. Leitsch. Decision procedures and model building
+in equational clause logic. Journal of the IGPL, 6(1):17-41, 1998.
+
+<P>
+C. Fermuller, A. Leitsch, U. Hustadt, and T. Tammet. Resolution
+decision procedures. In A. Robinson and A. Voronkov, editors, Handbook
+of Automated Reasoning, chapter 25, pages
+1791-1849. North-Holland, 2001.
+
+<P>
+S. Fevre and N. Peltier. Two problems in geometry solved by using
+automated model builders. AAR Newsletter 38, 1997.
+
+<P>
+G. Gottlob and R. Pichler. Working with ARMs: Complexity results on
+atomic representations of Herbrand models. Information and
+Computation, 2001. 25 pages.
+
+<P>
+S. Lee and D. Plaisted. Problem solving by searching for models with
+a theorem prover. Artificial Intelligence, 69:205-233, 1994.
+
+<P>
+R. Matzinger. Computational Representations of Models in First-Order
+Logic. PhD thesis, TU-Vienna, 2000.
+
+<P>
+N. Peltier. Increasing the capabilities of model building by
+constraint solving with terms with integer exponents. Journal of
+Symbolic Computation, 24:59-101, 1997.
+
+<P>
+N. Peltier.  Nouvelles Techniques pour la Construction
+de Modeles finis ou infinis en Deduction Automatique.
+PhD thesis, Institut National Polytechnique de Grenoble,
+1997.
+
+<P>
+N. Peltier. Tree automata and automated model building. Fundamenta
+Informaticae, 30(1):59-81, 1997.
+
+<P>
+N. Peltier. Pruning the search space and extracting more models in
+tableaux. Logic Journal of the IGPL, 7(2):217-251, 1999.
+
+<P>
+J. Pitt and J. Cunningham. Theorem Proving and Model Building with the Calculus KE. Journal of the IGPL 4(1), 129-150, 1996
+
+<P>
+T. Rudlof. SHR tableaux - A Framework for Automated Model
+Generation. Journal of Logic and Computation, 10(6):107-155, 2000.
+
+<P>
+J. Zhang. Problems on the generation of finite models. In Proc. of
+CADE-12, pages 753-757. Springer, 1994. LNAI 814.
+
+<P>
+J. Zhang and H. Zhang. SEM: a system for enumerating models. In
+Proc. IJCAI-95, volume 1, pages 298-303. Morgan Kaufmann, 1995.
+
+<P>
+W. Zhang. Number of models and satisfiability of sets of clauses.
+Theoretical Computer Science, 155(1):277-288, February 1996.
+
+<P>
+
+<ADDRESS>
+Carlos Areces
+2007-04-02
+</ADDRESS>
+</BODY>
+</HTML>

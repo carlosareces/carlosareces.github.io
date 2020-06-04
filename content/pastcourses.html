@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC 
+           "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta name="google-site-verification" content="q5Yccm9wpkQMOiAWyizysX8xNrOzL9iRXqj22wotIyQ" />
+    <meta name="description" content="Home Page of Carlos Areces" />
+    <meta name="keywords" content="logic, computational logics, modal logics, hybrid logics" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <link rel="stylesheet" href="../css/general.css" type="text/css" />	  
+    <title>Home Page of Carlos Areces</title>
+  </head>
+
+  <body class="index">
+
+    <div class="container">
+
+      <div class="header"><!-- Header Starts Here -->
+	<img src="../images/menu-left.gif"  alt="" width="743" height="23" />
+	<img src="../images/links-left.gif" alt="" width="743" height="25" />
+      </div><!-- Header Ends Here -->
+
+      <div class="content"><!--main content starts here-->
+
+   	<div id="rightcontent">
+	  <div class="blog">
+	    
+	    <h1>Past Courses</h1>
+	    <div class="blogbody">
+	      <ul>
+		<li><a href="https://carlosareces.github.io/ml18">Modal Logics @ Stanford</a></li>
+		<li><a href="https://carlosareces.github.io/lm17">L&oacute;gicas Modales</a></li>
+		<li><a href="https://carlosareces.github.io/esslli15/index.html">ESSLLI15</a></li>
+		<li><a href="https://carlosareces.github.io/nasslli10/index.html">NASSLLI10</a></li>
+		<li><a href="https://carlosareces.github.io/cordoba08/index.html">Cordoba08</a></li>
+		<li><a href="https://carlosareces.github.io/esslli08/index.html">ESSLLI08</a></li>
+		<li><a href="https://carlosareces.github.io/ls/index.html">Logics
+		    and Statistics for Language Modeling: Logic
+		    Section</a></li>
+		<li><a href="https://carlosareces.github.io/mi/index.html">Mathematics
+		    for Informatics</a></li>
+		<li><a href="https://carlosareces.github.io/LMC/index.html"
+		       target="_top">L&oacute;gica Modal
+		    Computacional</a></li>
+	      </ul>
+		  
+	    </div>
+	  </div>
+
+	  <div data-includeHTML="leftmenu.html"></div>
+
+        </div><!--rightcontent-->
+
+	<div data-includeHTML="leftmenu.html"></div>
+	
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+      $("div[data-includeHTML]").each(function () {                
+      $(this).load($(this).attr("data-includeHTML"));
+      });
+      });
+    </script>
+    
+  </body>
+</html>   
