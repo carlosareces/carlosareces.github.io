@@ -5,9 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   
   <head>
-    <meta name="verify-v1" content="qdriWngB5m+zqExgQL4Mlr6nLcPHvvNC6vaOslBWUA4=" /> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <meta name="google-site-verification" content="q5Yccm9wpkQMOiAWyizysX8xNrOzL9iRXqj22wotIyQ" />
     <meta name="description" content="Home Page of Carlos Areces" />
-    <meta name="keywords" content="logic, hybrid logic, computational logics, modal logics" />
+    <meta name="keywords" content="logic, computational logics, modal logics, hybrid logics" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     
     <link rel="stylesheet" href="css/general.css" type="text/css" />	  
@@ -16,14 +18,10 @@
   
   <body class="index">	
     
-    <a name="top"></a>
-    
-    <div class="container"><!-- Header Starts Here -->
-      <div class="header">
-	<img src="images/menu-left.gif"
-	     alt="" width="743" height="23" />
-	<img src="images/links-left.gif" 
-             alt="" width="743" height="25" />
+    <div class="container">
+      <div class="header"><!-- Header Starts Here -->
+	<img src="images/menu-left.gif"  alt="" width="743" height="23" />
+	<img src="images/links-left.gif" alt="" width="743" height="25" />
       </div> <!-- Header Ends Here -->
 
       <div class="content"><!--main content starts here-->
@@ -138,54 +136,23 @@
 	      
 	    </div>
 	  </div>      
-	  
-	  <div id="copyright">
-	    <br />
-	    
-	    <hr width="100%" size="-2"  />
-	    
-	    <div style="text-align:right; font-size:xx-small; padding-bottom: 3px;">
-	      &copy; 2004 Maintained by Carlos Areces. Last updated: 01-05-2020.
-	    </div>
-	  </div>
+
+	  <div data-includeHTML="copyright.html"></div>
 	  
 	</div><!--rightcontent-->
 	
-	<div class="leftcontent"><!-- Leftcontent Starts Here -->
-	  <center>
-	    <a href="http://carlosareces.github.io"><img src="images/carlos.jpg" alt= "[ -Myself- ]"/></a>
-          </center>
-	  
-          <center>
-            <a class="side" href="content/whoiam.html">Who I am</a>
-	  </center>
-	  
-	  <div class="leftmenu"><!-- Leftmenu Start Here -->
-	    <div class="sidetitle">Academic</div>
-   	    <a class="side" href="http://liisgroup.github.io/">My Research Group</a><br />
-            <a class="side" href="content/papers/sort_date.html">My Papers</a><br />
-            
-            <div class="sidetitle">Things I'm doing</div>
-            <a class="side" href="infinis.html">INFINIS</a><br />
-            <a class="side" href="http://www.meals-project.eu/">MEALS</a><br />
-            <a class="side" href="http://hylo.loria.fr">Hybrid Logics Web Page</a><br />
-            <a class="side" href="http://carlosareces.github.io/M4M">Methods for Modalities</a><br />
-            
-            <div class="sidetitle">Courses</div>
-            <a class="side" href="http://carlosareces.github.io/ml18">Modal Logics @ Stanford</a><br />
-            <a class="side" href="http://www.famaf.proed.unc.edu.ar/course/view.html?id=12">introalg</a><br />
-            <a class="side" href="http://carlosareces.github.io/lm17">L&oacute;gicas Modales</a><br />
-            <a class="side" href="content/courses.html">Old Courses</a><br />
-	    
-	  </div><!-- Leftmenu Ends Here -->
-	  <br />
-	</div><!-- Leftcontent Ends Here -->
-      
-	<p>
-	  &nbsp;<br />
-	</p>
+	<div data-includeHTML="leftmenu.html"></div>
+
       </div>
     </div>
-    
+
+    <script>
+      $(document).ready(function () {
+      $("div[data-includeHTML]").each(function () {                
+      $(this).load($(this).attr("data-includeHTML"));
+      });
+      });
+    </script>
+
   </body>
 </html>    
