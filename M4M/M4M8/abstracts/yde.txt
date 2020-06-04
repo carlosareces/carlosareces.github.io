@@ -1,0 +1,17 @@
+Yde Venema: Proof systems for Moss' coalgebraic modality
+
+After a quick introduction to coalgebra as a mathematical theory of
+systems, we discuss the coalgebraic logic as presented by Moss in
+the 90s. The language of this formalism is based on a non-standard
+modality, which in the case coalgebras for the power set functor (ie
+Kripke frames) is also known as the cover modality.
+
+The main topic of the talk concerns some derivation systems that, with
+various coauthors, I have been developing over the last couple of years.
+First I will introduce a sound and complete Hilbert-style system, and
+then I will move on to discuss some sound, complete, and cut-free Gentzen
+system.
+
+Time permitting I will also address some consequences of these results,
+such as uniform interpolation and complexity results.
+

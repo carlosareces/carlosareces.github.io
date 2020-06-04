@@ -1,0 +1,15 @@
+Barteld Kooi: Logics for intelligent interaction 
+
+One of the prominent themes in logic today is intelligent interaction,
+which occurs in any social situation, from simple conversations to
+complex procedures in institutionalized social structures. There are
+modal logical theories focussing on concepts such as intention,
+information, action and rationality. There is such a multitude that
+for one and the same subject there is more than one approach. There is
+a great need to establish whether alternative approaches actually
+provide fundamentally different perspectives, or whether the
+differences are merely superficial.  
+
+In the talk several logics will be presented, their interrelations,
+and methods for relating them will be discussed. 
+ 

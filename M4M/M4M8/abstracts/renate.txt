@@ -1,0 +1,29 @@
+Renate Schmidt: Simulation and Synthesis of Deduction Calculi
+
+There are numerous different ways of formalising deductive
+reasoning for a logic.  In this talk (i) we compare and contrast
+several such approaches and (ii) we discuss ways of
+systematically developing sound, complete and terminating
+deduction calculi for modal logics. 
+
+In particular, in the comparison we discuss how ground semantic
+tableau and resolution calculi can be simulated in the framework
+of first-order resolution.  This helps to shed new light on the
+relationship between different deduction methods, but can also be
+used to transfer soundness, completeness and decidability results
+between different approaches.  The simulation results can be
+exploited to transfer first-order automated reasoning techniques
+to modal deduction systems and allow the use of first-order
+provers as modal provers.  
+
+Regarding the systematic development of calculi we present a
+method for synthesising tableau calculi. The method takes a
+high-level specification of the formal semantics of a logic as
+input and transforms it into a set of tableau inference rules,
+which can then be used to reason within the logic.  The method
+guarantees that the generated rules form a calculus that is
+sound and constructively complete. Combined with a new blocking
+mechanism this defines a terminating tableau calculus whenever
+the logic has the finite model property and admits finite
+filtration.
+

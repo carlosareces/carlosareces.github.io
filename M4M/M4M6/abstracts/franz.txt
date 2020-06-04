@@ -1,0 +1,20 @@
+Franz Baader: Small is Again Beautiful in Description Logics
+
+The Description Logic (DL) research of the last 20 years was mainly
+concerned with increasing the expressive power of the employed
+description language without losing the ability of implementing
+highly-optimized reasoning systems that behave well in practice,
+in spite of the ever increasing worst-case complexity of the underlying
+inference problems.
+
+OWL DL, the standard ontology language for the Semantic Web, is
+based on such an expressive DL for which reasoning is highly
+intractable. Its sublanguage OWL Lite was intended to provide a
+tractable version of OWL, but turned out to be only of a slightly
+lower worst-case complexity than OWL DL. This and other reasons
+have led to the development of two new families of light-weight DLs,
+EL and DL-Lite, which recently have been proposed as profiles of
+OWL 2, the next version of the OWL standard. In this talk, we give
+an introduction to these new families logics and explain the
+rationales underlying their design.
+

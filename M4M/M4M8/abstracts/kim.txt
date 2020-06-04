@@ -1,0 +1,27 @@
+Kim G. Larsen: Quantiative modal logics for specification and 
+verification
+
+The 2007 Turing Award was recently given to Ed Clarke, Alan Emerson 
+and Joseph Sifakis for their ground-breaking work on model checking, 
+refing to the following problem: "Given a model of a system, test 
+automatically whether this model meets a given specification. 
+Typically, the systems one has in mind are hardware or software 
+systems, and the specification contains safety requirements such as 
+the absence of deadlocks and similar critical states that can cause 
+the system to crash." Often specifications are expressed in temporal 
+logics such as LTL or CTL allowing both safety (something bad will 
+never happen) and liveness (something good will eventually happen) 
+properties to be expressed.
+
+Embedded systems are software systems executing on dedicated hardware 
+with the purpose of monitoring and controlling a complex physical 
+environment (e.g. the breaking system in a car). Here quantitative 
+requirements are often mandatory, including constraints on timing 
+behaviour, energy and memory consumption, bandwidth etc.  Also, these 
+constraints may be either hard or soft depending on whether the 
+constraint is unconditional or a small probabilities for the 
+constraint to be violated is acceptable.  In the talk we shall 
+illustrate different quantitative extensions of CTL to include time, 
+energy as well as probabilities.  Also we shall show quantitative 
+verification for these logics are supported by various branches of 
+the UPPAAL verification tool (www.uppaal.com).

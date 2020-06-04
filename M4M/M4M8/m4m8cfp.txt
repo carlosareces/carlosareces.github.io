@@ -1,0 +1,95 @@
+====================================================================
+8th Worskhop on "Methods for Modalities" (M4M-8)
+Lake Placid, New York, June 9, 2013 
+http://www.cs.famaf.unc.edu.ar/~careces/M4M/M4M8/
+====================================================================
+
+Scope
+-----
+The workshop ''Methods for Modalities'' (M4M) aims to bring together
+researchers interested in developing algorithms, verification methods
+and tools based on modal logics. Here the term ''modal logics'' is
+conceived broadly, including temporal logic, description logic,
+guarded fragments, conditional logic, temporal and hybrid logic, etc.
+
+To stimulate interaction and transfer of expertise, M4M will feature a
+number of invited talks by leading scientists, research presentations
+aimed at highlighting new developments, and submissions of
+system demonstrations.
+
+We strongly encourage young researchers and students to submit papers 
+and posters, especially for experimental and prototypical software tools
+which are related to modal logics.
+
+More information about the previous editions can be found at
+
+   http://www.cs.famaf.unc.edu.ar/~careces/M4M/M4M8/
+
+Paper Submissions
+------------------
+
+Authors are invited to submit papers in the following three categories. 
+In all cases the LNCS style should be used.
+
+- Regular papers up to 15 pages including bibliography, describing original 
+  research.
+
+- System descriptions of up to 12 pages including bibliography, describing 
+  new systems or significant upgrades of existing ones.
+
+- Presentation-only papers, describing work recently published or submitted 
+  (no page limit). These will not be included in the proceedings, but pre-prints 
+  or post-prints can be made available to participants.
+
+Submissions should be made via EasyChair at the following address:
+
+http://www.easychair.org/conferences/?conf=m4m8
+
+The final versions of the selected contributions will be collected in a volume 
+to be distributed at the workshop. These informal proceedings will also be made 
+accessible on the web. We plan to publish selected papers in ENTCS or in a special 
+journal issue on the topic of the M4M workshop after an extra refereeing round.
+
+Important dates
+---------------
+
+Abstract submission deadline: April 12th, 2013 [firm]
+Paper submission deadline: April 15th, 2013 [firm]
+Notification of acceptance: May 19th, 2013
+Camera ready versions due: May 26th, 2013
+Workshop dates: June 9, 2013
+
+Program Committee
+-----------------
+The following researchers have agreed to be members of the program 
+committee of M4M-8:
+
+Carlos Areces (chair), Conicet & Universidad Nacional de Córdoba
+Thomas Ågotnes, University of Bergen
+Natasha Alechina, University of Nottingham
+Philippe Balbiani, Institut de Recherche en Informatique de Toulouse
+Thomas Bolander, Technical University of Denmark
+Patrick Blackburn, University of Roskilde
+Julian Bradfield, University of Edinburgh
+Stephane Demri, ENS de Cachan
+Hans van Ditmarsch, LORIA
+Santiago Figueira, Conicet & Universidad de Buenos Aires
+Diego Figueira, University of Edinburgh
+Silvio Ghilardi, University of Milano
+Rajeev Goré, The Australian National University
+Daniel Gorín, Friedrich-Alexander Universität Erlangen-Nürnberg
+Guido Governatori, NICTA Queensland Research Laboratory
+Andreas Herzig, Institut de Recherche en Informatique de Toulouse
+Guillaume Hoffmann, Universidad de Córdoba
+Barteld Kooi, University of Groningen
+Martin Lange, University of Kassel
+Tiago de Lima, University of Artois
+Alessio Lomuscio, Imperial College London
+Carsten Lutz, Universität Bremen
+Angelo Montanari, University of Udine
+Sergio Mera, Universidad de Buenos Aires
+Valeria de Paiva, Nuance Communications, Inc.
+Carsten Schürmann, IT University of Copenhagen
+Gert Smolka, Saarland University
+Frank Wolter, University of Liverpool
+Heinrich Wansing, Ruhr University Bochum
