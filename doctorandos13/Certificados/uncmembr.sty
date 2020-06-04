@@ -1,0 +1,400 @@
+%
+% This is file uncmembr.sty
+%
+% Date: 2007/01/29
+% Author: Pedro R. D'Argenio
+%
+% ======================================================================
+% COMO USAR ESTE PAQUETE
+%
+% Este paquete puede llamarse con diversas opciones mediante
+%
+% \usepackage[options]{uncmembr}
+%
+% Las opciones pueden ser:
+%
+% - small o large: El area a de escritura en la pagina es un recuadro
+%   mas peque#o o mas grande de acuerdo se use la opcion small o large.
+%   El recuadro variara de acuerdo al tama#no de letra (font) y de
+%   pagina que se haya seleccionado en la clase del documento.
+% - header o noheader, de acuerdo se dese usar el membrete o no.
+% - bw o color, de acuerdo a si sedesea que el membrete sea en negro o
+%   en color (azul marino).
+%
+% Las opciones por defecto son: small, header y bw
+%
+% El paquete usa tres grupos de comandos para opciones de formatos. El
+% primero se refiere a la aparicion de la direccion de la FaMAF en el
+% membrete:
+%
+% - \setHeadAddress y \setFootAddress ubican a la direccion de la FaMAF
+%   en la parte superior e inferior del membrete respectivamente.
+% - \unsetAddress visualiza un membrete sin direccion.
+%
+% Por defecto el membrete tiene direccion al pie de la pagina
+% (\setFootAddress).
+%
+% El segundo grupo de comandos de seteo se refiere a que tipo de
+% subrayado llevara el destinatario:
+%
+% - \setSD subraya al destinatario incorporando las iniciales S/D ("Su
+%   despacho").
+% - \unsetSD solo subraya con una linea.
+%
+% Finalmente, es posible seleccionar la sangria de los parrafos
+% mediante el comando
+%
+%   \setFracIndent{exp}
+% 
+% donde "exp" es igual o mayor que cero y corresponde al exponente en
+% la fraccion 1/2^exp. "exp" indica que la longitud de la sangria sera
+% de la 2^exp-ava parte del largo total del texto de apertura.  Si
+% excede el valor 4 entonces no habra sangria. El valor de "exp" por
+% defecto es 0 (la sangria se extiende toda la longitud del texto de
+% apertura)
+%
+% El resto de los comandos corresponden al contenido de la carta.
+%
+% La firma se declara a traves del comando
+%
+%   \signature{Nombre \\ ...}
+%
+% y se mostrara al final con el comando \closing
+%
+% La direccion del remitente se declara con
+%
+%   \address{Institucion \\ Direccion \\ CP - Ciudad \\ ...}
+%
+% y aparecera al principio de la carta ubicada arriba a la derecha.
+% Se mostrara a traves del comando \opening. Puede omitirse (y se
+% recomienda hacerlo) si se esta usando la direccion en el membrete.
+%
+% El destinatario, incluida su direccion, se declara con
+%
+%   \addressee{Nombre \\ Institucion \\ Direccion \\ CP - Ciudad \\ ...}
+%
+% Ocacionalmente, se puede desear agrgar una linea con un texto que
+% indique una nota de referenci situando el contexo de la carta. Esto
+% se declara con
+%
+%   \reference{texto de referencia}
+%
+% Una vez hecha todas las declaraciones, la carta se comienza con el
+% comando:
+%
+%   \opening{texto de apertura}
+%
+% Este comando ubica la direccion del remitente (si es que se ha
+% declarado), la fecha (la cual puede modificarse usando el comando
+% \date de latex), y el destinatario en la manera usual. A
+% continuacion visualiza la referencia y seguidamente el texto de
+% apertura.
+%
+% A continuacion se tipea al cuerpo de la carta.
+%
+% La carta finaliza con el comando
+%
+%   \closing{saludo final}
+%
+% que visualiza el saludo final y la firma.
+%
+% ======================================================================
+%
+
+
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{uncmembr}%
+                [2007/01/29 v0.9 Formato carta c/membrete FaMAF-UNC]
+\typeout{Package uncmembr, 2007/01/29 v0.9, formato carta c/membrete FaMAF-UNC. (C) 2007}
+
+%
+% Opciones
+%
+
+\newif\if@largetextarea
+\DeclareOption{large}{\@largetextareatrue}
+\DeclareOption{small}{\@largetextareafalse}
+\newif\if@headeroff
+\DeclareOption{noheader}{\@headerofftrue}
+\DeclareOption{header}{\@headerofffalse}
+\newif\if@colouredheader
+\DeclareOption{color}{\@colouredheadertrue}
+\DeclareOption{bw}{\@colouredheaderfalse}
+\ExecuteOptions{small,header,bw}
+\ProcessOptions
+
+%
+% Paquetes
+%
+
+% Dimensiones
+
+\if@largetextarea%
+  \ifcase\@ptsize%
+    \RequirePackage[DIV9,BCOR0mm,headinclude,footexclude,2.8headlines]{typearea}%
+    \or \RequirePackage[DIV12,BCOR0mm,headinclude,footexclude,2.8headlines]{typearea}%
+    \else \RequirePackage[DIV14,BCOR0mm,headinclude,footexclude,2.8headlines]{typearea}%
+  \fi%
+\else%
+  \ifcase\@ptsize%
+    \RequirePackage[DIV8,BCOR0mm,headinclude,footexclude,2.8headlines]{typearea}%
+    \or \RequirePackage[DIV9,BCOR0mm,headinclude,footexclude,2.8headlines]{typearea}%
+    \else \RequirePackage[DIV10,BCOR0mm,headinclude,footexclude,2.8headlines]{typearea}%
+  \fi%
+\fi
+
+% Paquetes para el membrete
+
+\RequirePackage{ifpdf}
+\if@headeroff\else
+  \RequirePackage{fancyhdr}
+  \RequirePackage{graphicx}
+  \if@colouredheader
+    \RequirePackage{color}
+  \else\fi
+\fi
+
+\setlength\parskip{0.7em}
+
+%
+% Definicion Auxiliar
+%
+
+\newcommand{\@greaterof}[2]{\ifdim#1>#2#1\else#2\fi}
+
+%
+% Membrete
+%
+
+
+% Definir el color del texto
+
+\newcommand{\@uncname}{Universidad Nacional de C\'ordoba}
+\newcommand{\@famafname}{Facultad de Matem\'atica, Astronom\'\i{}a y F\'\i{}sica}
+\newcommand{\@addresstext}{Haya de la Torre s/n, Ciudad Universitaria -- 5000, C\'ordoba -- Argentina}
+\newcommand{\@communicationdata}{Tel. +54 351 4334051 / Fax: +54 351 4334054 -- http://www.famaf.unc.edu.ar}
+\newcommand{\@UCfamafname}{\MakeUppercase{\@famafname}}
+
+
+\if@colouredheader
+  \definecolor{myNavyBlueCOLORHD}{rgb}{0,0.125,0.317}
+  \newcommand{\@formatfont}[1]{\textcolor{myNavyBlueCOLORHD}{#1}}
+\else
+  \newcommand{\@formatfont}[1]{#1}
+\fi
+
+% Incluyendo o no la direccion, arriba o abajo
+% COMMANDS:
+%   \setHeadAddress
+%   \setFootAddress
+%   \unsetAddress
+
+
+\newif\if@headaddress
+\newif\if@footaddress
+\newcommand*{\setHeadAddress}{\@headaddresstrue\@footaddressfalse}
+\newcommand*{\setFootAddress}{\@headaddressfalse\@footaddresstrue}
+\newcommand*{\unsetAddress}{\@headaddressfalse\@footaddressfalse}
+\setFootAddress
+
+\newcommand{\@HeadWithAddress}{%
+    \begin{minipage}[c]{29em} ~\\[-3em]
+      \@formatfont{\@uncname} \\[.2ex]
+      \@formatfont{\@famafname} \\[.2ex]
+      \@formatfont{\scriptsize \@addresstext}\vspace{.5ex}
+    \end{minipage}
+}
+
+\newcommand{\@HeadWithoutAddress}{%
+    \begin{minipage}[c]{29em} ~\\[-1.7em]
+      \@formatfont{\large \@uncname} \\[.8ex]
+      \@formatfont{\small \@UCfamafname}\vspace{2ex}
+    \end{minipage}
+}
+
+
+% Definir membrete
+
+\if@headeroff%
+  \renewcommand{\thepage}{}
+\else
+  % Seleccionar tipo de archivo para el escudo
+  \ifpdf\if@colouredheader%
+     \newcommand{\@includeEscudo}{\includegraphics[width=3.5em]{escudo-azul.pdf}}
+    \else%
+     \newcommand{\@includeEscudo}{\includegraphics[width=3.5em]{escudo.pdf}}
+  \fi\else\if@colouredheader%
+     \newcommand{\@includeEscudo}{\includegraphics[width=3.5em]{escudo-azul.eps}}
+    \else%
+     \newcommand{\@includeEscudo}{\includegraphics[width=3.5em]{escudo.eps}}
+  \fi\fi%
+  \pagestyle{fancy}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \newcommand{\@myrulewidth}{0.8pt}
+  \lhead{%
+    \begin{minipage}{4.5em}
+      ~\\[-3em]
+      \@includeEscudo
+    \end{minipage}
+    \if@headaddress\@HeadWithAddress\else\@HeadWithoutAddress\fi\\[.5ex]
+    \if@colouredheader
+      {\color{myNavyBlueCOLORHD}%
+       \hrule\@height\@myrulewidth\@width\headwidth
+         \vskip-\@myrulewidth}%
+    \else
+      \hrule\@height\@myrulewidth\@width\headwidth \vskip-\@myrulewidth%
+    \fi
+    \vspace{-1.1em}
+  }
+  \chead{}
+  \rhead{}
+  \lfoot{}
+  \cfoot{%
+    \if@footaddress
+      \if@colouredheader
+        {\color{myNavyBlueCOLORHD}%
+         \vskip-\footruleskip\vskip-\@myrulewidth
+         \hrule\@width\headwidth\@height\@myrulewidth\vskip\footruleskip}%
+      \else
+        \vskip-\footruleskip\vskip-\@myrulewidth
+        \hrule\@width\headwidth\@height\@myrulewidth\vskip\footruleskip%
+      \fi
+      {\scriptsize \@formatfont{\@addresstext\\[-.7ex]\@communicationdata}}%
+    \fi}
+  \rfoot{}
+\fi
+
+
+%
+% Destinatario
+%
+
+\newlength{\towidth}
+\newlength{\lenSD}
+
+\newlength{\@towidthaux}
+\long\def\@tolines#1{%
+  \@tolinesaux #1@@@%
+  \settowidth{\@towidthaux}{\toname}%
+  \setlength{\towidth}{\@greaterof{\towidth}{\@towidthaux}}%
+  \ifx\toaddress\@empty
+  \else
+    \@tolinescontinuation #1@@@%
+  \fi}
+\long\def\@tolinesaux #1\\#2@@@{\def\toname{#1}\def\toaddress{#2}}
+\long\def\@tolinescontinuation #1\\#2@@@{\@tolines{#2}}
+\newcommand*{\addressee}[1]{%
+  \settowidth{\towidth}{~}\@tolines{#1\\}\@tolinesaux #1\\@@@%
+  \setlength{\lenSD}{.5\towidth}\addtolength{\lenSD}{-4ex}%
+}
+
+\newif\if@SD
+\newcommand{\setSD}{\@SDtrue}
+\newcommand{\unsetSD}{\@SDfalse}
+\unsetSD
+
+
+%
+% Remitente
+%
+
+\newcommand*{\signature}[1]{\def\fromsig{#1}}
+\newcommand*{\address}[1]{\def\fromaddress{#1}}
+\signature{}
+\address{}
+
+%
+% Adicionales
+%
+
+\newcommand*{\reference}[1]{\def\referencetext{#1}}
+\reference{}
+
+%
+% Opening and Closing
+%
+
+
+\newcommand*{\stopbreaks}{%
+  \interlinepenalty\@M
+  \def\par{\@@par\nobreak}%
+  \let\\\@nobreakcr
+  \let\vspace\@nobreakvspace}
+\DeclareRobustCommand\@nobreakvspace
+   {\@ifstar\@nobreakvspacex\@nobreakvspacex}
+\def\@nobreakvspacex#1{%
+  \ifvmode
+    \nobreak\vskip #1\relax
+  \else
+    \@bsphack\vadjust{\nobreak\vskip #1}\@esphack
+  \fi}
+\def\@nobreakcr{\@ifstar{\@normalcr*}{\@normalcr*}}
+\newcommand*{\startbreaks}{%
+  \let\\\@normalcr
+  \interlinepenalty 200%
+  \def\par{\@@par\penalty 200\relax}}
+
+\newdimen\longindentation
+\longindentation=.5\textwidth
+\newdimen\indentedwidth
+\indentedwidth=\textwidth
+\advance\indentedwidth -\longindentation
+
+\newlength{\@parindentaux}
+
+\newcommand*{\opening}[1]{%
+  \setlength{\parindent}{0ex}%
+  \ifx\@empty\fromaddress
+    {\raggedleft\@date\par}%
+  \else  % home address
+    {\raggedleft\begin{tabular}{l@{}}\ignorespaces
+      \fromaddress \\*[2\parskip]%
+      \@date \end{tabular}\par}%
+  \fi
+  \vspace{2\parskip}%
+  {\raggedright \toname \\ \toaddress \par}%
+  \if@SD
+    {S \underline{\hspace{\lenSD}} / \underline{\hspace{\lenSD}} D}\par
+  \else
+    \underline{\hspace{\towidth}}\par
+  \fi
+  \vspace{2\parskip}%
+  \ifx\@empty\referencetext \else
+    \textsl{Ref.: \referencetext}\par
+    \vspace{2\parskip}%
+  \fi
+  #1\par\nobreak%
+  \settowidth{\@parindentaux}{#1}%
+  \ifcase\@expFracIndent
+    \setlength{\parindent}{\@parindentaux}%
+    \or \setlength{\parindent}{.5\@parindentaux}%
+    \or \setlength{\parindent}{.25\@parindentaux}%
+    \or \setlength{\parindent}{.125@parindentaux}%
+    \or \setlength{\parindent}{.0625\@parindentaux}%
+    \else \setlength{\parindent}{0pt}%
+  \fi
+}
+
+\newlength{\@signaturewidth}
+\newcommand*{\closing}[1]{\par\nobreak\vspace{\parskip}%
+  \stopbreaks
+  \noindent
+  \hspace*{\@parindentaux}%
+  \ignorespaces #1\\[6\medskipamount]%
+  \mbox{}\hfill%
+  \begin{minipage}{.75\textwidth}%
+    \begin{center} \fromsig \end{center}
+  \end{minipage}
+  \par}
+
+\medskipamount=\parskip
+
+
+%
+% Contenido
+%
+
+\newcommand{\@expFracIndent}{0}
+\newcommand*{\setFracIndent}[1]{\renewcommand{\@expFracIndent}{#1}}
+
