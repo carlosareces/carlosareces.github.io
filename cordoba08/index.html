@@ -26,10 +26,12 @@
       
       <div class="content"><!--main content starts here-->
 
-   	<div id="rightcontent"><div class="blog">
-	    <h1>Logica y Demostracion Automatica</h1>
-	    <div class="blogbody">
+   	<div id="rightcontent">
 
+	  <div class="blog">
+	    <h1>Logica y Demostracion Automatica</h1>
+
+	    <div class="blogbody">
 	      <p>
 		En este curso vamos
 		a dar una presentacion de distintas logicas (logica proposicional,
@@ -138,48 +140,68 @@
 	      
 	      <div class="myul">
 		<ul>
-		  <li>"Seventy-Five Problemas for Testing Automatic Theorem Provers", F. Pelletier, Journal of Automated Reasoning 2 (1986) 191--216.<br/> <a href="Bib/75ATPproblems86.pdf">[pdf]</a>
+		  <li>"Seventy-Five Problemas for Testing Automatic
+		  Theorem Provers", F. Pelletier, Journal of Automated
+		  Reasoning 2 (1986)
+		  191-216. <a href="Bib/75ATPproblems86.pdf">[pdf]</a>
 		  </li>
-		  <!--            <li><a href="Bib/chap8.pdf">XXX</a>
-				  </li>-->
-		  <li>"The Search for Satisfaction", I. Gent and T. Walsh. Draft, 1999.<br/><a href="Bib/gent99search.pdf">[pdf]</a>
+		  <li>"The Search for Satisfaction", I. Gent and
+		  T. Walsh. Draft,
+		  1999. <a href="Bib/gent99search.pdf">[pdf]</a>
 		  </li>
-		  <li>"The SAT Phase Transition", I. Gent and T. Walsh, ECAI 94.<br/><a href="Bib/gent94sat.pdf">[pdf]</a>
+		  <li>"The SAT Phase Transition", I. Gent and
+		  T. Walsh, ECAI
+		  94. <a href="Bib/gent94sat.pdf">[pdf]</a>
 		  </li>
-		  <li>"On the stupid algorithm for satisfiability", I. Gent, Technical report, APES-03-1998.<br/><a href="Bib/apes-03-1998.pdf">[pdf]</a>
+		  <li>"On the stupid algorithm for satisfiability",
+		  I. Gent, Technical report,
+		  APES-03-1998. <a href="Bib/apes-03-1998.pdf">[pdf]</a>
             </li>
-		  <li>"Common Syntax of the DFG-Schwerpunktprogramm `Deduktion'", R. Hahnle, M. Kerber, C. Weidenbach. Technical Report.<br/><a href="Bib/KA-96-10.pdf">[pdf]</a>
+		  <li>"Common Syntax of the DFG-Schwerpunktprogramm
+		  `Deduktion'", R. Hahnle, M. Kerber,
+		  C. Weidenbach. Technical
+		  Report. <a href="Bib/KA-96-10.pdf">[pdf]</a>
 		  </li>
-		  <li>"Resolution Strategies as Decision Procedures", W. Joyner, Journal
-		    of the ACM, Vol 23, No 3, 1976, 398--417.</br><a href="Bib/joyner.pdf">[pdf]</a>
+		  <li>"Resolution Strategies as Decision Procedures",
+		    W. Joyner, Journal of the ACM, Vol 23, No 3, 1976,
+		    398-417. <a href="Bib/joyner.pdf">[pdf]</a>
 		</li>
-		<li>"Basic Description Logics", F. Baader and W. Nutt. Handbook of Description Logics.<br/><a href="Bib/dlhb-02.pdf">[pdf]</a>
+		<li>"Basic Description Logics", F. Baader and
+		W. Nutt. Handbook of Description
+		Logics. <a href="Bib/dlhb-02.pdf">[pdf]</a>
 		</li>
-		<li>"Representation, Reasoning, and Relational Structures: a Hybrid Logic manifesto", P. Blackburn, Logic Journal of the IGPL, Vol 8, No 3, 2000, 339--365. <br/><a href="Bib/representation.pdf">[pdf]</a>
+		<li>"Representation, Reasoning, and Relational
+		Structures: a Hybrid Logic manifesto", P. Blackburn,
+		Logic Journal of the IGPL, Vol 8, No 3, 2000,
+		339-365. <a href="Bib/representation.pdf">[pdf]</a>
 		</li>
-		<li>"Model checking for hybrid logics (with an application to semistructured data)", M. Franceschet and M. de Rijke, Journal of Applied Logic, Vol 4, No 3, 2006, 279--304.<br/><a href="Bib/.pdf">[pdf]</a>
+		<li>"Model checking for hybrid logics (with an
+		application to semistructured data)", M. Franceschet
+		and M. de Rijke, Journal of Applied Logic, Vol 4, No
+		3, 2006, 279-304. <a href="Bib/.pdf">[pdf]</a>
 		</li>
               </ul>
 	    </div>
 	    
 	  </div>
+	</div>
 	  
-	  <div data-includeHTML="../copyright.html"></div>
+	<div data-includeHTML="../copyright.html"></div>
 	  
-	</div><!--rightcontent-->
+      </div><!--rightcontent-->
 	
-    	<div data-includeHTML="../leftmenu.html"></div>
+      <div data-includeHTML="../leftmenu.html"></div>
 	
-      </div>
     </div>
+  </div>
 
-    <script>
-      $(document).ready(function () {
-      $("div[data-includeHTML]").each(function () {                
-      $(this).load($(this).attr("data-includeHTML"));
-      });
-      });
-    </script>
+  <script>
+    $(document).ready(function () {
+    $("div[data-includeHTML]").each(function () {                
+    $(this).load($(this).attr("data-includeHTML"));
+    });
+    });
+  </script>
     
-  </body>
+</body>
 </html>
