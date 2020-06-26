@@ -1,0 +1,96 @@
+
+
+body {
+    margin: 10px 10px 0px 10px;
+    font-size: 100.1%;
+    background-image:url('spiral.jpg');
+    background-repeat: no-repeat;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    color:#FFFFFF;
+    background-color:#3c8e14;
+    padding:0px;
+  }
+
+
+#leftcontent {
+    font-size: 95%;
+    background-color:#d2c19e;
+    position: absolute;
+    margin-top : 0px;
+    left:0px;
+    top:269px;
+    width:180px;
+    padding:10px;
+  }
+
+
+#centercontent {
+    margin-left : 210px;
+    margin-right : 230px;
+    min-height : 500px;
+  }
+
+
+#rightcontent {
+    font-size: 95%;
+    position: absolute;
+    right:10px;
+    top:120px;
+    width:220px;
+  }
+
+
+#banner {
+    margin-left : 210px;
+    text-align : left;
+    white-space : nowrap;
+  }
+
+
+img {
+    border: 0;
+  }
+
+
+.menuLeft {
+    list-style-type: none;
+    line-height: 1.5em;
+ }
+
+
+.footer {
+    border-bottom-color : #493000;
+    border-bottom-style : solid;
+    border-bottom-width : 2px;
+    border-top-color : #493000;
+    border-top-style : solid;
+    border-top-width : 2px;
+    clear : both;
+    font-size : 10px;
+    padding-bottom : 5px;
+    padding-top : 5px;
+    text-align : center;
+    text-decoration : none;
+  }
+
+
+.red {
+    color : #493000;
+  }
+
+
+h1, h2, h3 {
+    color : #493000;
+  }
+
+hr {
+    border : 0;
+    color : #493000;
+    background-color : #493000;
+}
+
+a {
+    color : #493000;
+    text-decoration : inherit;
+  }
+
