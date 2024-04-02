@@ -1,0 +1,37 @@
+@InProceedings{areces:keps23,
+  author =       "F. Areces and B. Ocampo and C. Areces and
+                  M. Dominguez and D. Gnad",
+  title =        "Partial Grounding in Planning using Small Language Models",
+  booktitle =    "Proceedings of the 2023 Workshop on Knowledge Engineering for Planning and Scheduling",
+  year =         "2023",
+  abstract =     "The aim of classical automated planning is to find a
+                  sequence of actions, a plan, that changes the state
+                  of the world from a given initial state to a state
+                  that satisfies the goal condition.  Most research in
+                  the field focuses on heuristic search, which
+                  attempts to find a plan on a fully grounded model of
+                  the planning task. However, obtaining the full
+                  grounding is often infeasible as its size can be
+                  exponentially larger than the original input. We
+                  follow up on previous work that introduced partial
+                  grounding for planning using a relevance prediction
+                  estimate obtained from classical machine learning
+                  models. These models are trained offline, on a
+                  per-domain basis, to estimate how likely it is for a
+                  plan to include a given action.  In this article we
+                  leverage recent advances in the field of language
+                  models in natural language processing (NLP) to
+                  improve these estimates. We use small language
+                  models to create word embeddings for actions and
+                  facts directly from their textual
+                  representation. These models provide fixed-length
+                  representations for actions and facts reached along
+                  a deleterelaxed solution of a planning task, which
+                  can be obtained efficiently. We show that these
+                  feature vectors can be used to train predictors of
+                  action relevance, that consistently identify
+                  relevant actions on an established set of
+                  hard-to-ground planning benchmarks.",
+  address = "Prague, Czech Republic",
+  month = "July",
+}

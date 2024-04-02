@@ -1,0 +1,84 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <title>Publications partial grounding in planning using small language models</title>
+      <link rel="StyleSheet" href="../layout.css" type="text/css">
+   </head>
+   <body>
+      <div class="content">
+         <h2>Partial Grounding in Planning using Small Language Models</h2>
+         <p class="citation">F. Areces, B. Ocampo, C. Areces, M. Dominguez, and D. Gnad. Partial Grounding in Planning using Small Language Models. In
+            <i>Proceedings of the 2023 Workshop on Knowledge Engineering for Planning and Scheduling</i>, Prague, Czech Republic, July
+            2023.
+         </p>
+         <h3>Download</h3>
+         <p><a href="files/KEPS-23_paper_1243.pdf">
+               [pdf]</a>&nbsp;
+         </p>
+         <h3>Abstract</h3>
+         <p class="abstract">The aim of classical automated planning is to find a                  sequence of actions, a plan, that changes the state
+            of the world from a given initial state to a state                  that satisfies the goal condition.  Most research in 
+            the field focuses on heuristic search, which                  attempts to find a plan on a fully grounded model of       
+            the planning task. However, obtaining the full                  grounding is often infeasible as its size can be         
+            exponentially larger than the original input. We                  follow up on previous work that introduced partial     
+            grounding for planning using a relevance prediction                  estimate obtained from classical machine learning   
+            models. These models are trained offline, on a                  per-domain basis, to estimate how likely it is for a     
+            plan to include a given action.  In this article we                  leverage recent advances in the field of language   
+            models in natural language processing (NLP) to                  improve these estimates. We use small language           
+            models to create word embeddings for actions and                  facts directly from their textual                  representation.
+            These models provide fixed-length                  representations for actions and facts reached along                  a
+            deleterelaxed solution of a planning task, which                  can be obtained efficiently. We show that these        
+                     feature vectors can be used to train predictors of                  action relevance, that consistently identify
+                             relevant actions on an established set of                  hard-to-ground planning benchmarks.
+         </p><a href="areceskeps23.bib">
+            <h3>BibTeX</h3></a><pre>@InProceedings{areces:keps23,
+  author =       "F. Areces and B. Ocampo and C. Areces and
+                  M. Dominguez and D. Gnad",
+  title =        "Partial Grounding in Planning using Small Language Models",
+  booktitle =    "Proceedings of the 2023 Workshop on Knowledge Engineering for Planning and Scheduling",
+  year =         "2023",
+  abstract =     "The aim of classical automated planning is to find a
+                  sequence of actions, a plan, that changes the state
+                  of the world from a given initial state to a state
+                  that satisfies the goal condition.  Most research in
+                  the field focuses on heuristic search, which
+                  attempts to find a plan on a fully grounded model of
+                  the planning task. However, obtaining the full
+                  grounding is often infeasible as its size can be
+                  exponentially larger than the original input. We
+                  follow up on previous work that introduced partial
+                  grounding for planning using a relevance prediction
+                  estimate obtained from classical machine learning
+                  models. These models are trained offline, on a
+                  per-domain basis, to estimate how likely it is for a
+                  plan to include a given action.  In this article we
+                  leverage recent advances in the field of language
+                  models in natural language processing (NLP) to
+                  improve these estimates. We use small language
+                  models to create word embeddings for actions and
+                  facts directly from their textual
+                  representation. These models provide fixed-length
+                  representations for actions and facts reached along
+                  a deleterelaxed solution of a planning task, which
+                  can be obtained efficiently. We show that these
+                  feature vectors can be used to train predictors of
+                  action relevance, that consistently identify
+                  relevant actions on an established set of
+                  hard-to-ground planning benchmarks.",
+  address = "Prague, Czech Republic",
+  month = "July",
+}
+</pre></div>
+      <hr width="100%" size="2">
+      <p><small>
+            Generated by
+            <a href="http://www.cs.cmu.edu/~pfr/misc_software/index.html#bib2html">bib2html.pl</a>
+            (written by <a href="http://www.cs.cmu.edu/~pfr">Patrick Riley</a>
+            ) on
+            Tue Apr 02, 2024 11:16:27</small></p>
+   </body>
+</html>
