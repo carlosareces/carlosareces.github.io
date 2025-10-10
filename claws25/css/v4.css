@@ -1,15 +1,15 @@
 @charset "iso-8859-1";
 
 /*******************************************************************************
-* v4.css : 2004-08-11 : Ruthsarian Layouts
+*  v4.css : 2004-08-11 : Ruthsarian Layouts
 * ------------------------------------------------------------------------------
-* The purpose of this stylesheet is to provide enough CSS to get
-* version 4 browsers (IE4 and NN4) to render in a 3 column layout.
+*  The purpose of this stylesheet is to provide enough CSS to get
+*  version 4 browsers (IE4 and NN4) to render in a 3 column layout.
 *
-* Because _all_ css-capable browsers will see this stylesheet, any
-* selectors that exist within this stylesheet need to be overridden in 
-* one of the other stylesheets that normal browsers will pick up. 
-* Otherwise the good browsers may get screwed up by the NN4/IE4 stuff.
+*  Because _all_ css-capable browsers will see this stylesheet, any
+*  selectors that exist within this stylesheet need to be overridden in 
+*  one of the other stylesheets that normal browsers will pick up. 
+*  Otherwise the good browsers may get screwed up by the NN4/IE4 stuff.
 *******************************************************************************/
 
 
@@ -90,7 +90,7 @@ body
 
 #masthead, #footer, .hnav, #contentColumn
 {
-	border: solid 1px #005A9C; /* CHANGED: Was black (#000) */
+	border: solid 1px #000;
 }
 #pageWrapper
 {
@@ -118,34 +118,19 @@ body
 
 body
 {
-	background-color: #F8F9FA;
+	background-color: #fff;
 	/*/*//*/ background-color: #ccc;	/* nn4 coloring */
-	color: #343A40;
+	color: #000;
 }
 #pageWrapper
 {
-	background-color: #F8F9FA;
-	color: #343A40;
+	background-color: #fff;
+	color: #000;
 }
 #contentcolumn					/* selector case hack */
 {
-	color: #343A40;
-	background-color: #ffffff; /* CHANGED: Was light gray (#eee) */
-}
-
-/* ADDED: New rules for headers and links */
-h1, h2, h3, h4, h5, h6 {
-    color: #005A9C; /* Headers in deep blue */
-}
-
-a {
-    color: #17a2b8; /* Links in vibrant teal */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #005A9C; /* Links become blue on hover */
-    text-decoration: underline;
+	color: #000;
+	background-color: #eee;
 }
 
 
@@ -169,12 +154,4 @@ a:hover {
 	/*/*//*/ padding: 0.1em 0 0.4em ;	/* nn4 fix */
 }
 
-
-.centered-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 150px; /* Sets the image width to exactly 150 pixels */
-  height: auto; /* Maintains the aspect ratio */
-}
 /******************************************************************************/
