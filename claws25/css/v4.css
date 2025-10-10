@@ -118,18 +118,18 @@ body
 
 body
 {
-	background-color: #fff;
+	background-color: #F8F9FA;
 	/*/*//*/ background-color: #ccc;	/* nn4 coloring */
-	color: #000;
+	color: #343A40;
 }
 #pageWrapper
 {
-	background-color: #fff;
-	color: #000;
+	background-color: #F8F9FA;
+	color: #343A40;
 }
 #contentcolumn					/* selector case hack */
 {
-	color: #000;
+	color: #343A40;
 	background-color: #eee;
 }
 
