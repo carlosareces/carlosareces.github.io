@@ -159,7 +159,7 @@ body
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 150px; /* Sets the image width to exactly 150 pixels */
+  width: 50px; /* Sets the image width to exactly 150 pixels */
   height: auto; /* Maintains the aspect ratio */
 }
 /******************************************************************************/
