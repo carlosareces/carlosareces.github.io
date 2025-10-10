@@ -154,12 +154,12 @@ body
 	/*/*//*/ padding: 0.1em 0 0.4em ;	/* nn4 fix */
 }
 
+
 .centered-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; /* The image will take up 50% of its container's width */
-  height: auto; /* This is important to maintain the aspect ratio */
+  width: 150px; /* Sets the image width to exactly 150 pixels */
+  height: auto; /* Maintains the aspect ratio */
 }
-
 /******************************************************************************/
